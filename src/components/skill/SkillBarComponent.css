@@ -133,8 +133,9 @@
 }
 @media(max-width: 768px){
 	.skill_cont{
-		padding: 30px 8%;
+		padding-top: 330px;
 	}
+	
 }
 @media(max-width: 568px){
 	.skill_cont .skill_row{

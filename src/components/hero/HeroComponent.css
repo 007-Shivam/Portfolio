@@ -73,3 +73,59 @@
 }
 
 
+@media(max-width:1000px){  
+  .green-circles {
+      margin: 0px;
+      background-repeat: no-repeat;
+      height: 30em;
+      position: absolute;
+      z-index: 1;
+      margin-top: -140px;
+  }
+  .me {
+      margin: 0px;
+      background-repeat: no-repeat;
+      height: 30em;
+      position: absolute;
+      right: 0;
+      z-index: 10;
+      padding-block: 30px;
+      margin-top: -130px;
+  }
+  
+  .hero-container {
+    padding-top: 18vh;
+    display:contents;
+  }
+  
+  .abt-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .and-gif {
+    padding: 0px;
+  }
+  
+  .abt-me .bld {
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .abt-me .hello {
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .my-des {
+    font-size: 1em;
+    text-align: center;
+  }
+}

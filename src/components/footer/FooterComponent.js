@@ -1,24 +1,16 @@
 import React from 'react'
-import {
-  MDBFooter,
-  MDBContainer,
-  MDBCol,
-  MDBRow,
-  MDBIcon,
-  MDBBtn
-} from 'mdb-react-ui-kit';
 import './FooterComponent.css'
 
-export default function FooterComponent() {
+export default function Footer() {
   return (
     <div className="mainFooter">
       <footer>
         <div className="footerContainer">
           <div className="socialIcons">
-            <a className="likd" href=""><i className="fa fa-linkedin"></i></a>
-            <a className="git" href=""><i className="fa fa-github"></i></a>
-            <a className="glb" href=""><i className="fa fa-globe"></i></a>
-            <a className="inst" href=""><i className="fa fa-instagram"></i></a>
+            <a className="likd" href="https://www.linkedin.com/in/shivambhosle007/" target='_blank'><i className="fa fa-linkedin"></i></a>
+            <a className="git" href="https://github.com/007-Shivam" target='_blank'><i className="fa fa-github"></i></a>
+            <a className="glb" href="https://shivambhosle.vercel.app/" target='_blank'><i className="fa fa-globe"></i></a>
+            <a className="inst" href="https://instagram.com/shivam__2709?igshid=MmVlMjlkMTBhMg==" target='_blank'><i className="fa fa-instagram"></i></a>
           </div>
 
           <div className="footerBottom">

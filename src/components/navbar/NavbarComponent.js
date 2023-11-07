@@ -1,7 +1,9 @@
 import React from 'react'
 import './NavbarComponent.css'
+import { Link } from 'react-router-dom';
 
-export default function NavbarComponent() {
+
+export default function Navbar() {
     return (
         <header>
             <input type="checkbox" name="" id="chk1" />
@@ -11,22 +13,22 @@ export default function NavbarComponent() {
             <ul>
                 <div className="hm"></div>
                 <li className="center">
-                    <a href="#">Intro</a>
+                    <Link to="/">Intro</Link>
                 </li>
                 <li className="center">
-                    <a href="#">Education</a>
+                    <Link to="/education">Education</Link>
                 </li>
                 <li className="center">
-                    <a href="#">Projects</a>
+                    <Link to="/project">Projects</Link>
                 </li>
                 <li className="center">
-                    <a href="#">Experience</a>
+                    <Link to="/experience">Experience</Link>
                 </li>
                 <li className="sc">
-                    <a href=""><i className="fa fa-linkedin"></i></a>
-                    <a href=""><i className="fa fa-github"></i></a>
-                    <a href=""><i className="fa fa-globe"></i></a>
-                    <a href=""><i className="fa fa-instagram"></i></a>
+                    <Link to="https://www.linkedin.com/in/shivambhosle007/" target='_blank'><i className="fa fa-linkedin"></i></Link>
+                    <Link to="https://github.com/007-Shivam" target='_blank'><i className="fa fa-github"></i></Link>
+                    <Link to="https://shivambhosle.vercel.app/" target='_blank'><i className="fa fa-globe"></i></Link>
+                    <Link to="https://instagram.com/shivam__2709?igshid=MmVlMjlkMTBhMg==" target='_blank'><i className="fa fa-instagram"></i></Link>
                 </li>
             </ul>
             <div className="menu">

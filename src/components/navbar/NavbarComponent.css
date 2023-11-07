@@ -1,7 +1,4 @@
 header{
-  margin-top: 5px;
-  /*margin-left: 5px;
-  margin-right: 5px; */
   width:100%;
   height: 100px;
   display: flex;
@@ -10,8 +7,8 @@ header{
   position: fixed;
   z-index: 99;
   box-shadow: #000 5px 5px;
-  background-color: rgb(252, 211, 241);
-  border-radius: 20px;
+  background-color: #3ddc84;
+  border-radius: 5px;
 }
 #chk1{
   display: none;  
@@ -80,8 +77,8 @@ header .menu{
       flex-direction: column;
       align-items: center;
       transition: right 0.5s linear;
-      background-color: rgb(252, 211, 241);
-      border-radius: 20px;
+      background-color: #3ddc84;
+      border-radius: 50px;
 
   }
   .sc{

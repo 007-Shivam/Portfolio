@@ -1,13 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
-import NavbarComponent from './components/navbar/NavbarComponent';
-import FooterComponent from './components/footer/FooterComponent';
+import Navbar from './components/navbar/NavbarComponent';
+import Intro from './pages/Intro';
+import Education from './pages/Education';
+import Experience from './pages/Experience';
+import Project from './pages/Project';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <>
-    <NavbarComponent/>
-    <FooterComponent/>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path='/' element={<Intro/>} />
+          <Route path='/education' element={<Education/>} />
+          <Route path='/project' element={<Project/>} />
+          <Route path='/experience' element={<Experience/>} />
+        </Routes>
+      </Router>
     </>
   );
 }

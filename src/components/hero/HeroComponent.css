@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+.me-container {
+  text-align: right;
+  position: relative;
+}
+
+.me,
+.green-circles {
+  display: block;
+}
+
+.green-circles {
+    margin-right: 120px;
+    background-repeat: no-repeat;
+    height: 41em;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    margin-top: -70px;
+}
+
+.me {
+    margin-right: 135px;
+    background-repeat: no-repeat;
+    height: 43em;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+    padding-block: 50px;
+    margin-top: -80px;
+}
+
+.hero-container {
+    padding-top: 18vh;
+  display: flex;
+}
+
+.hero-container>div {
+  flex: 1;
+  padding: 10px;
+}
+
+.abt-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.and-gif {
+  padding-top: 10px;
+}
+
+.abt-me .bld {
+  margin: 0;
+  font-size: 5em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.abt-me .hello {
+  margin: 0;
+  font-size: 2em;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.my-des {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+

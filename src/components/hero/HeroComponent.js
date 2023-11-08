@@ -2,7 +2,9 @@ import React from 'react'
 import './HeroComponent.css'
 import Circle from '../../assets/bg.png';
 import Me from '../../assets/me.png';
-import Mascot from '../../assets/video.gif';
+import Mascot from '../../assets/final.gif';
+import New from '../../assets/new_bg.png'
+
 
 
 export default function Hero() {
@@ -22,7 +24,7 @@ export default function Hero() {
                 <img className="and-gif" src={Mascot} alt="Small GIF" />
             </div>
             <div className="me-container">
-                <img className="green-circles" src={Circle} alt="bg" />
+                <img className="green-circles" src={New} alt="bg" />
                 <img className="me" src={Me} alt="pro" />
             </div>
         </div>  

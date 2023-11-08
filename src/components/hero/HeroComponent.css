@@ -11,29 +11,29 @@
 }
 
 .green-circles {
-    margin-right: 120px;
-    background-repeat: no-repeat;
-    height: 41em;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-    margin-top: -140px;
-    padding-inline-end: 15px;
+  margin-right: 120px;
+  background-repeat: no-repeat;
+  height: 41em;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  margin-top: -140px;
+  padding-inline-end: 15px;
 }
 
 .me {
-    margin-right: 135px;
-    background-repeat: no-repeat;
-    height: 43em;
-    position: absolute;
-    right: 0;
-    z-index: 10;
-    padding-block: 50px;
-    margin-top: -150px;
+  margin-right: 135px;
+  background-repeat: no-repeat;
+  height: 43em;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  padding-block: 50px;
+  margin-top: -150px;
 }
 
 .hero-container {
-    padding-top: 18vh;
+  padding-top: 18vh;
   display: flex;
 }
 
@@ -74,31 +74,33 @@
 }
 
 
-@media(max-width:768px){  
+@media(max-width:768px) {
   .green-circles {
-      margin: 0px;
-      background-repeat: no-repeat;
-      height: 30em;
-      position: absolute;
-      z-index: 1;
-      margin-top: -140px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    height: 27em;
+    position: absolute;
+    z-index: 1;
+    margin-top: -140px;
+    right: -65px;
   }
+
   .me {
-      margin: 0px;
-      background-repeat: no-repeat;
-      height: 30em;
-      position: absolute;
-      right: 0;
-      z-index: 10;
-      padding-block: 9px;
-      margin-top: -120px;
+    margin: 0px;
+    background-repeat: no-repeat;
+    height: 30em;
+    position: absolute;
+    right: -70px;
+    z-index: 10;
+    padding-block: 10px;
+    margin-top: -120px;
   }
-  
+
   .hero-container {
     padding-top: 18vh;
-    display:contents;
+    display: contents;
   }
-  
+
   .abt-me {
     display: flex;
     flex-direction: column;
@@ -106,25 +108,25 @@
     align-items: center;
     height: 90vh;
   }
-  
+
   .and-gif {
     padding: 0px;
   }
-  
+
   .abt-me .bld {
     margin: 0;
     font-size: 3em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
   }
-  
+
   .abt-me .hello {
     margin: 0;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
   }
-  
+
   .my-des {
     font-size: 1em;
     text-align: center;

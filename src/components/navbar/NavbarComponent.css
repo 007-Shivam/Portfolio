@@ -85,12 +85,12 @@ nav ul li a:hover {
     left: -300px;
     top: 0;
     z-index: 999;
-    width: 280px;
+    width: 250px;
     height: 50vh;
     border-radius: 30px;
     background-color: #fefefe;
     transition: 0.2s;
-    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 0 20px 0 rgba(0, 0, 0, 1);
   }
 
   #nav_check:checked ~ nav{

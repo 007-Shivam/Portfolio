@@ -1,9 +1,8 @@
 import React from 'react'
 import './HeroComponent.css'
-import Circle from '../../assets/bg.png';
-import Me from '../../assets/me.png';
-import Mascot from '../../assets/final.gif';
-import New from '../../assets/new_bg.png'
+import Me from '../../../assets/me.png';
+import Mascot from '../../../assets/final.gif';
+import New from '../../../assets/new_bg.png'
 
 
 

@@ -5,10 +5,6 @@ export default function SkillBar() {
     return (
         <mainContainer>
             <div className="skill_cont">
-                {/* <div className="main-title">
-                    <h1>My Skills</h1>
-                </div> */}
-
                 <div className="sub-title">
                     <h2>Programming Skills</h2>
                 </div>

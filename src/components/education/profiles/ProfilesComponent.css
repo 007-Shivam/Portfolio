@@ -1,0 +1,75 @@
+.my-profiles {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    margin: 30px 0;
+}
+
+
+.edu-courses {
+    --s: 150px;
+    --g: 20px;
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+}
+
+.edu-courses>.course-name {
+    grid-area: 1/1;
+    width: var(--s);
+    aspect-ratio: 1.15;
+    object-fit: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+    transform: translate(var(--_x, 0), var(--_y, 0)) scale(var(--_t, 1));
+    cursor: pointer;
+    /* filter: grayscale(80%); */
+    transition: .2s linear;
+}
+
+.edu-courses>.course-name:hover {
+    /* filter: grayscale(0); */
+    z-index: 1;
+    --_t: 1.2;
+}
+
+.edu-courses>.course-name:nth-child(1) {
+    --_y: calc(-100% - var(--g))
+}
+
+.edu-courses>.course-name:nth-child(7) {
+    --_y: calc(100% + var(--g))
+}
+
+.edu-courses>.course-name:nth-child(3),
+.edu-courses>.course-name:nth-child(5) {
+    --_x: calc(-75% - .87*var(--g))
+}
+
+.edu-courses>.course-name:nth-child(4),
+.edu-courses>.course-name:nth-child(6) {
+    --_x: calc(75% + .87*var(--g))
+}
+
+.edu-courses>.course-name:nth-child(3),
+.edu-courses>.course-name:nth-child(4) {
+    --_y: calc(-50% - .5*var(--g))
+}
+
+.edu-courses>.course-name:nth-child(5),
+.edu-courses>.course-name:nth-child(6) {
+    --_y: calc(50% + .5*var(--g))
+}
+
+.courses-main {
+    display: grid;
+    place-content: center;
+    /* background: #aabbfb; */
+}
+
+@media only screen and (max-width: 768px){
+    .edu-courses {
+        --s: 110px;
+        --g: 5px;
+        display: grid;
+        margin: calc(var(--s) + var(--g));
+    }
+}

@@ -1,13 +1,20 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
 import './NavbarComponent.css'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/lg.png'
 
 
 export default function Navbar() {
+    const navigate = useNavigate();
+
+    const navigateToMainPage = () => {
+        navigate("/");
+      };
+
     return (
         <header className='nav_header'>
-            <div className="nv_logo">
+            <div className="nv_logo" onClick={navigateToMainPage} style={{ cursor: 'pointer' }}>
                 <img className="logo_class" src={logo} alt="logo" />
             </div>
             <input type="checkbox" id="nav_check" hidden />

@@ -56,7 +56,7 @@ export default function CertificateComponent() {
     ];
 
     const handleClick = (link) => {
-        window.open(link, '_blank');
+        window.open(link, '_blank', 'noreferrer');
     };
 
     return (

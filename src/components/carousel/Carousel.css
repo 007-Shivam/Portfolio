@@ -1,0 +1,19 @@
+.slick-slide>div {
+  margin: 0 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: orange !important;
+}
+
+@media (max-width: 768px) {
+  .slick-slider {
+    max-width: 90%;
+  }
+  .custom-height {
+    height: 520px;
+    margin-bottom: 50px;
+  }
+  
+
+}

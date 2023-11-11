@@ -83,18 +83,18 @@
     z-index: 1;
     margin-top: -100px;
     right: 0px;
-}
+  }
 
-.me {
-  margin: 0px;
-  background-repeat: no-repeat;
-  height: 20em;
-  position: absolute;
-  right: 30px;
-  z-index: 10;
-  padding-block: 10px;
-  margin-top: -80px;
-}
+  .me {
+    margin: 0px;
+    background-repeat: no-repeat;
+    height: 20em;
+    position: absolute;
+    right: 30px;
+    z-index: 10;
+    padding-block: 10px;
+    margin-top: -80px;
+  }
 
   .hero-container {
     padding-top: 18vh;
@@ -133,6 +133,42 @@
   }
 }
 
+/* CSS */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.green-circles {
+  animation: fadeIn 2s forwards;
+  /* Adjust duration as needed */
+  animation-delay: 0s;
+  /* No delay for the first image */
+}
+
+.me,
+.bld,
+.hello,
+.my-des,
+.socialIcons,
+.and-gif {
+  animation: fadeIn 3s forwards;
+  /* Adjust duration as needed */
+  animation-delay: 0s;
+  /* Delay for the second image */
+}
+
+
+
 @media only screen and (min-width: 769px) and (max-width: 1300px) {
   .me {
     margin-right: 135px;
@@ -143,9 +179,9 @@
     z-index: 10;
     padding-block: 20px;
     margin-top: -100px;
-}
+  }
 
-.green-circles {
+  .green-circles {
     margin-right: 120px;
     background-repeat: no-repeat;
     height: 31em;
@@ -154,24 +190,24 @@
     z-index: 1;
     margin-top: -100px;
     padding-inline-end: 15px;
-}
+  }
 
-.abt-me .hello {
+  .abt-me .hello {
     margin: 0;
     font-size: 2vh;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-}
+  }
 
-.abt-me .bld {
+  .abt-me .bld {
     margin: 0;
     font-size: 2em;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-}
+  }
 
-.my-des {
+  .my-des {
     font-size: 2vh;
     text-align: center;
-}
+  }
 }

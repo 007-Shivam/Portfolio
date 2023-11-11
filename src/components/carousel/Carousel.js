@@ -1,39 +1,72 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Carousel.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ACM from '../../../assets/projects/acm.jpg'
-import AI from '../../../assets/projects/ai.png'
-import ATM from '../../../assets/projects/atm.jpg'
-import BVP from '../../../assets/projects/bvp.jpg'
-import Cosmos from '../../../assets/projects/cosmos.jpg'
-import Eye from '../../../assets/projects/eye.jpg'
-import Feedfolks from '../../../assets/projects/feed.jpg'
-import IronMan from '../../../assets/projects/ironman.gif'
-import Jarvis from '../../../assets/projects/jarvis.jpg'
-import LittleLemon from '../../../assets/projects/lemon.jpg'
-import MealPlanner from '../../../assets/projects/meal.png'
-import Quiz from '../../../assets/projects/quiz.jpg'
-import Restaurant from '../../../assets/projects/res.png'
-import Weather from '../../../assets/projects/weather.png'
+import ACM from '../../assets/projects/acm.jpg'
+import AI from '../../assets/projects/ai.png'
+import ATM from '../../assets/projects/atm.jpg'
+import BVP from '../../assets/projects/bvp.jpg'
+import Cosmos from '../../assets/projects/cosmos.jpg'
+import Eye from '../../assets/projects/eye.jpg'
+import Feedfolks from '../../assets/projects/feed.jpg'
+import IronMan from '../../assets/projects/ironman.gif'
+import Jarvis from '../../assets/projects/jarvis.jpg'
+import LittleLemon from '../../assets/projects/lemon.jpg'
+import MealPlanner from '../../assets/projects/meal.png'
+import Quiz from '../../assets/projects/quiz.jpg'
+import Restaurant from '../../assets/projects/res.png'
+import Weather from '../../assets/projects/weather.png'
 
 
 export default function Carousel() {
-  const settings = {
+  const [settings, setSettings] = useState({
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
-  };
+    slidesToScroll: 1,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth <= 768) {
+        setSettings({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        });
+      } else {
+        setSettings({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        });
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div className='w-3/4 m-auto mb-20'>
+      <div className="my-prof-div">
+        <p className="my-profiles">My Projects</p>
+      </div>
       <div className="mt-20">
         <Slider {...settings}>
           {data.map((d) => (
-            <div key={d.name} className="bg-white h-[450px] text-black rounded-xl border-2 border-solid border-black mb-5">
+            <div key={d.name} className="bg-white h-[450px] mt-10 text-black rounded-xl border-2 border-solid border-black mb-5 custom-height hover:transform hover:scale-105 hover:transition duration-3000">
               <div className='h-56 bg-gradient-to-r from-indigo-700 to-blue-500 flex justify-center items-center rounded-t-xl'>
                 <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
               </div>
@@ -42,7 +75,7 @@ export default function Carousel() {
                 <p className="text-xl font-semibold text-center">{d.name}</p>
                 <p className="text-center">{d.review}</p>
                 <a href={d.link} target="_blank" rel="noreferrer">
-                  <button className='bg-gradient-to-r from-indigo-700 to-blue-500 text-white text-lg px-6 py-1 rounded-xl'>Link</button>
+                  <button className='bg-gradient-to-r from-indigo-700 to-blue-500 text-white text-lg px-6 py-1 rounded-xl transition duration-500 hover:from-blue-500 hover:to-indigo-700'>Link</button>
                 </a>
               </div>
             </div>
@@ -144,5 +177,4 @@ const data = [
     review: `ATM project boosts banking efficiency through advanced multithreading techniques.`,
     link: 'https://github.com/007-Shivam/Multhreading_based_ATM_Banking_System'
   },
-
 ];

@@ -14,7 +14,7 @@ export default function EducationComponent() {
                     <div className="text-box">
                         <h2>Bharati Vidyapeeth Deemed University Department of Engineering & Technology, Navi Mumbai</h2>
                         <small>2021 - Present</small>
-                        <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                        <p className='edu-des'>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
                         <span className="left-container-arrow"></span>
                     </div>
                 </div>
@@ -24,7 +24,7 @@ export default function EducationComponent() {
                     <div className="text-box">
                         <h2>Nirmala Memorial Foundation College of Commerce & Science, Mumbai</h2>
                         <small>2019 - 2021</small>
-                        <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                        <p className='edu-des'>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
                         <span className="right-container-arrow"></span>
 
                     </div>
@@ -35,7 +35,7 @@ export default function EducationComponent() {
                     <div className="text-box">
                         <h2>Oxford Public School</h2>
                         <small>2006 - 2019</small>
-                        <p>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
+                        <p className='edu-des'>Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</p>
                         <span className="left-container-arrow"></span>
                     </div>
                 </div>

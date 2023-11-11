@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../components/footer/FooterComponent'
-import Carousel from '../components/project/carousel/Carousel'
+import Carousel from '../components/carousel/Carousel'
 
 export default function Project() {
   return (

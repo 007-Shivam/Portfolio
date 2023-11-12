@@ -3,6 +3,7 @@ import './Carousel.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LightSpeed from 'react-reveal/LightSpeed';
 
 import ACM from '../../assets/projects/acm.jpg'
 import AI from '../../assets/projects/ai.png'
@@ -63,25 +64,29 @@ export default function Carousel() {
       <div className="my-prof-div">
         <p className="my-profiles">My Projects</p>
       </div>
-      <div className="mt-20">
-        <Slider {...settings}>
-          {data.map((d) => (
-            <div key={d.name} className="bg-white h-[450px] mt-10 text-black rounded-xl border-2 border-solid border-black mb-5 custom-height hover:transform hover:scale-105 hover:transition duration-3000">
-              <div className='h-56 bg-gradient-to-r from-indigo-700 to-blue-500 flex justify-center items-center rounded-t-xl'>
-                <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
-              </div>
 
-              <div className="flex flex-col items-center justify-center gap-4 p-4">
-                <p className="text-xl font-semibold text-center">{d.name}</p>
-                <p className="text-center">{d.review}</p>
-                <a href={d.link} target="_blank" rel="noreferrer">
-                  <button className='bg-gradient-to-r from-indigo-700 to-blue-500 text-white text-lg px-6 py-1 rounded-xl transition duration-500 hover:from-blue-500 hover:to-indigo-700'>Link</button>
-                </a>
+      <LightSpeed left>
+        <div className="mt-20">
+          <Slider {...settings}>
+            {data.map((d) => (
+              <div key={d.name} className="bg-white h-[450px] mt-10 text-black rounded-xl border-2 border-solid border-black mb-5 custom-height hover:transform hover:scale-105 hover:transition duration-3000">
+                <div className='h-56 bg-gradient-to-r from-indigo-700 to-blue-500 flex justify-center items-center rounded-t-xl'>
+                  <img src={d.img} alt="" className="h-44 w-44 rounded-full" />
+                </div>
+
+                <div className="flex flex-col items-center justify-center gap-4 p-4">
+                  <p className="text-xl font-semibold text-center">{d.name}</p>
+                  <p className="text-center">{d.review}</p>
+                  <a href={d.link} target="_blank" rel="noreferrer">
+                    <button className='bg-gradient-to-r from-indigo-700 to-blue-500 text-white text-lg px-6 py-1 rounded-xl transition duration-500 hover:from-blue-500 hover:to-indigo-700'>Link</button>
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+            ))}
+          </Slider>
+        </div>
+      </LightSpeed>
+      
     </div>
   );
 }

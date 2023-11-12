@@ -1,15 +1,21 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import './SkillBarComponent.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 export default function SkillBar() {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
         <mainContainer>
             <div className="skill_cont">
-                <div className="sub-title">
+                <div className="sub-title" data-aos="fade-up">
                     <h2>Programming Skills</h2>
                 </div>
 
-                <div className="skill_row">
+                <div className="skill_row" data-aos="fade-up">
                     <section className="skill_col">
                         <div className="skills-container">
                             <div className="skill">
@@ -104,10 +110,10 @@ export default function SkillBar() {
                     </section>
                 </div>
 
-                <div className="sub-title">
+                <div className="sub-title" data-aos="fade-up">
                     <h2>Libraries / Frameworks</h2>
                 </div>
-                <div className="skill_row">
+                <div className="skill_row" data-aos="fade-up">
                     <section className="skill_col">
                         <div className="skills-container">
                             <div className="skill">
@@ -160,10 +166,11 @@ export default function SkillBar() {
                     </section>
                 </div>
 
-                <div className="sub-title">
+                <div className="sub-title" data-aos="fade-up">
                     <h2>Tools / Platforms</h2>
                 </div>
-                <div className="skill_row">
+
+                <div className="skill_row" data-aos="fade-up">
                     <section className="skill_col">
                         <div className="skills-container">
                             <div className="skill">
@@ -216,10 +223,10 @@ export default function SkillBar() {
                     </section>
                 </div>
 
-                <div className="sub-title">
+                <div className="sub-title" data-aos="fade-up">
                     <h2>Softskills</h2>
                 </div>
-                <div className="skill_row">
+                <div className="skill_row" data-aos="fade-up">
                     <section className="skill_col">
                         <div className="skills-container">
                             <div className="skill">

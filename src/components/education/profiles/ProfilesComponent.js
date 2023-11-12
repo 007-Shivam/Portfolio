@@ -1,5 +1,7 @@
 import React from 'react'
 import './ProfilesComponent.css'
+import Zoom from 'react-reveal/Zoom';
+
 import Cloud from '../../../assets/profiles/cloud.png'
 import Gfg from '../../../assets/profiles/gfg.png'
 import Developer from '../../../assets/profiles/developer.png'
@@ -7,8 +9,6 @@ import Leet from '../../../assets/profiles/leet.png'
 import Ninja from '../../../assets/profiles/ninja.png'
 import Holopin from '../../../assets/profiles/holopin.png'
 import Coursera from '../../../assets/profiles/coursera.png'
-
-
 
 export default function ProfilesComponent() {
     const coursesData = [
@@ -23,26 +23,27 @@ export default function ProfilesComponent() {
 
     const handleClick = (link) => {
         window.open(link, '_blank');
-      };
-
+    };
 
     return (
         <div className="courses-main">
             <div className="my-prof-div">
                 <p className="my-profiles">My Profiles</p>
             </div>
-            <div className="edu-courses">
-                {coursesData.map((course, index) => (
-                    <img
-                        key={index}
-                        className="course-name"
-                        src={course.image}
-                        alt={`Course ${index + 1}`}
-                        onClick={() => handleClick(course.link)}
-                        style={{ cursor: 'pointer', margin: '10px' }}
-                    />
-                ))}
-            </div>
+            <Zoom top>
+                <div className="edu-courses">
+                    {coursesData.map((course, index) => (
+                        <img
+                            key={index}
+                            className="course-name"
+                            src={course.image}
+                            alt={`Course ${index + 1}`}
+                            onClick={() => handleClick(course.link)}
+                            style={{ cursor: 'pointer', margin: '10px' }}
+                        />
+                    ))}
+                </div>
+            </Zoom>
         </div>
     )
 }

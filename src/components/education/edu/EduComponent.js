@@ -1,5 +1,6 @@
 import React from 'react'
 import './EduComponent.css'
+
 import BVP from '../../../assets/edu/bvp.png'
 import NMF from '../../../assets/edu/nmf.png'
 import OPS from '../../../assets/edu/ops.png'

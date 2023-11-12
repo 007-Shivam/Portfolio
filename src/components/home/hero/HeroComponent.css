@@ -148,26 +148,13 @@
   }
 }
 
-.green-circles {
-  animation: fadeIn 2s forwards;
-  /* Adjust duration as needed */
-  animation-delay: 0s;
-  /* No delay for the first image */
-}
-
-.me,
 .bld,
 .hello,
 .my-des,
-.socialIcons,
 .and-gif {
-  animation: fadeIn 3s forwards;
-  /* Adjust duration as needed */
+  animation: fadeIn 1s forwards;
   animation-delay: 0s;
-  /* Delay for the second image */
 }
-
-
 
 @media only screen and (min-width: 769px) and (max-width: 1300px) {
   .me {

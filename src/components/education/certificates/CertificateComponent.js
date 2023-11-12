@@ -1,5 +1,8 @@
-import React from 'react';
+import { React, useEffect } from 'react'
 import './CertificateComponent.css';
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import Certificate1 from '../../../assets/certificates/Intro to Android Mobile Application Development.png';
 import Certificate2 from '../../../assets/certificates/Principles of UXUI Design.png';
 import Certificate3 from '../../../assets/certificates/Version Control.png';
@@ -10,6 +13,10 @@ import Certificate7 from '../../../assets/certificates/Working with Data in Andr
 
 
 export default function CertificateComponent() {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     const certificatesData = [
         {
             image: Certificate1,
@@ -60,7 +67,7 @@ export default function CertificateComponent() {
     };
 
     return (
-        <div className="certificate">
+        <div className="certificate" data-aos="fade-up">
             <div className="my-prof-div">
                 <p className="my-profiles">Certificates</p>
             </div>

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './NavbarComponent.css';
 
-import logo from '../../assets/lg.png';
+import logo from '../../assets/logo.jpg';
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -45,6 +45,12 @@ export default function Navbar() {
           <li>
             <Link to="/experience" className={location.pathname === '/experience' ? 'active' : ''} onClick={closeNav}>
               Experience
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.dropbox.com/scl/fi/wabot0mj8m5uhrjc6r2k7/Shivam-Bhosle-Resume.pdf?rlkey=a9q2n89tcs5q8fv8k2sg4sljs&dl=0"
+              className={`${location.pathname === '/experience' ? 'active ' : ''}CV`} onClick={closeNav} target="_blank">
+              Download CV
             </Link>
           </li>
         </ul>

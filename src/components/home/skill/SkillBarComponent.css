@@ -1,27 +1,30 @@
-*{
+* {
 	box-sizing: border-box;
 }
 
-.skill_cont{
+.skill_cont {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
 	padding: 30px 10%;
 }
-.skill_cont .main-title{
+
+.skill_cont .main-title {
 	max-width: 700px;
 	margin: 70px auto;
 	text-align: center;
 	font-family: helvetica;
 }
-.skill_cont .main-title h1{
+
+.skill_cont .main-title h1 {
 	position: relative;
 	font-size: 40px;
 	color: #242223;
 	margin-bottom: 30px;
 	display: inline-block;
 }
-.skill_cont .main-title h1::before{
+
+.skill_cont .main-title h1::before {
 	content: '';
 	position: absolute;
 	width: 100%;
@@ -30,7 +33,8 @@
 	left: 0;
 	background-color: #808080;
 }
-.skill_cont .main-title h1::after{
+
+.skill_cont .main-title h1::after {
 	content: '';
 	position: absolute;
 	width: 50%;
@@ -41,31 +45,33 @@
 	transform: translateX(-50%);
 }
 
-.skill_cont .skill_row{
+.skill_cont .skill_row {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-.skill_row .skill_col{
+
+.skill_row .skill_col {
 	flex-basis: 46%;
 }
 
-.skill{
+.skill {
 	margin-top: 50px;
 }
 
-.sub-title{
+.sub-title {
 	margin-top: 50PX;
 }
 
-.sub-title h2{
+.sub-title h2 {
 	position: relative;
 	color: #242223;
 	font-size: 22px;
 	font-family: helvetica;
 	display: inline-block;
 }
-.sub-title h2::before{
+
+.sub-title h2::before {
 	content: '';
 	position: absolute;
 	width: 50%;
@@ -74,7 +80,8 @@
 	left: 0;
 	background-color: #808080;
 }
-.sub-title h2::after{
+
+.sub-title h2::after {
 	content: '';
 	position: absolute;
 	width: 25%;
@@ -83,14 +90,16 @@
 	left: 0;
 	background-color: #d03645;
 }
-.subject{
+
+.subject {
 	font-size: 18px;
 	font-weight: thin;
 	color: #808080;
 	padding-bottom: 15px;
 	text-transform: uppercase;
 }
-.progress-bar{
+
+.progress-bar {
 	position: relative;
 	width: 90%;
 	height: 5px;
@@ -98,7 +107,8 @@
 	border-radius: 15px;
 	margin-bottom: 20px;
 }
-.progress-bar::after{
+
+.progress-bar::after {
 	position: absolute;
 	content: attr(value);
 	top: -35px;
@@ -106,7 +116,8 @@
 	color: #808080;
 	font-size: 18px;
 }
-.progress-line{
+
+.progress-line {
 	position: absolute;
 	width: 0%;
 	height: 7px;
@@ -115,12 +126,14 @@
 	top: -1px;
 	animation: animate 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
 }
-@keyframes animate{
-	100%{
+
+@keyframes animate {
+	100% {
 		width: 100%;
 	}
 }
-.progress-line::after{
+
+.progress-line::after {
 	content: '';
 	position: absolute;
 	width: 13px;
@@ -131,23 +144,27 @@
 	transform: translate(-50%, -50%);
 	background-color: #d03645;
 }
-@media(max-width: 768px){
-	.skill_cont{
+
+@media(max-width: 768px) {
+	.skill_cont {
 		padding-top: 330px;
 	}
-	
 }
-@media(max-width: 568px){
-	.skill_cont .skill_row{
+
+@media(max-width: 568px) {
+	.skill_cont .skill_row {
 		flex-direction: column;
 	}
-	.skill_cont .main-title h1{
+
+	.skill_cont .main-title h1 {
 		font-size: 36px;
 	}
-	.skill_cont .skill_row{
+
+	.skill_cont .skill_row {
 		margin-top: 30px;
 	}
-	.skill_row .skill_col:nth-child(2){
+
+	.skill_row .skill_col:nth-child(2) {
 		margin-top: 20px;
 	}
 }

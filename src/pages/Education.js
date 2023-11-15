@@ -10,8 +10,8 @@ export default function Education() {
       <ProfilesComponent />
       <EducationComponent />
       <CertificateComponent />
-      <Footer/>
+      <Footer />
     </div>
-    
+
   )
 }

@@ -3,8 +3,8 @@ import './HeroComponent.css'
 import Bounce from 'react-reveal/Bounce';
 
 import Me from '../../../assets/me.png';
-import Mascot from '../../../assets/final.gif';
-import New from '../../../assets/new_bg.png'
+import Mascot from '../../../assets/mascot.gif';
+import New from '../../../assets/green_circles.png'
 
 export default function Hero() {
     return (
@@ -26,10 +26,10 @@ export default function Hero() {
 
             </div>
             <div className="me-container">
-                <Bounce left>
+                <Bounce>
                     <img className="green-circles" src={New} alt="bg" />
                 </Bounce>
-                <Bounce right>
+                <Bounce>
                     <img className="me" src={Me} alt="pro" />
                 </Bounce>
             </div>

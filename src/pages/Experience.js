@@ -6,7 +6,7 @@ export default function Experience() {
   return (
     <div>
       <ExpCard />
-      <Footer/>
+      <Footer />
     </div>
   )
 }

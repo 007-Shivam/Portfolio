@@ -10,6 +10,8 @@ import Certificate4 from '../../../assets/certificates/Create UI using Android S
 import Certificate5 from '../../../assets/certificates/Programming Fundamentals in Kotlin.png';
 import Certificate6 from '../../../assets/certificates/Advanced Programming in Kotlin.png';
 import Certificate7 from '../../../assets/certificates/Working with Data in Android.png';
+import Certificate8 from '../../../assets/certificates/Mobile Development and JavaScript.png';
+
 
 
 export default function CertificateComponent() {
@@ -59,6 +61,12 @@ export default function CertificateComponent() {
             title: 'Meta - Working with Data in Android',
             text: '- Meta Inc, Coursera',
             link: 'https://www.coursera.org/account/accomplishments/certificate/FPX9HY2JWM7V',
+        },
+        {
+            image: Certificate8,
+            title: 'Meta - Mobile Development and JavaScript',
+            text: '- Meta Inc, Coursera',
+            link: 'https://www.coursera.org/account/accomplishments/certificate/7V2BX74H2KNF',
         },
     ];
 

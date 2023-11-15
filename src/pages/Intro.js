@@ -6,9 +6,9 @@ import Hero from '../components/home/hero/HeroComponent';
 export default function Intro() {
     return (
         <div>
-            <Hero/>
-            <SkillBar/>
-            <Footer/>
+            <Hero />
+            <SkillBar />
+            <Footer />
         </div>
     );
 }

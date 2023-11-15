@@ -26,8 +26,8 @@ export default function SkillBar() {
                             </div>
                             <div className="skill">
                                 <div className="subject">Php</div>
-                                <div className="progress-bar" value="60%">
-                                    <div className="progress-line" style={{ maxWidth: '60%' }}></div>
+                                <div className="progress-bar" value="50%">
+                                    <div className="progress-line" style={{ maxWidth: '50%' }}></div>
                                 </div>
                             </div>
                             <div className="skill">
@@ -90,8 +90,8 @@ export default function SkillBar() {
                             </div>
                             <div className="skill">
                                 <div className="subject">Python</div>
-                                <div className="progress-bar" value="55%">
-                                    <div className="progress-line" style={{ maxWidth: '55%' }}></div>
+                                <div className="progress-bar" value="60%">
+                                    <div className="progress-line" style={{ maxWidth: '60%' }}></div>
                                 </div>
                             </div>
                             <div className="skill">
@@ -197,9 +197,9 @@ export default function SkillBar() {
                                 </div>
                             </div>
                             <div className="skill">
-                                <div className="subject">Apache</div>
-                                <div className="progress-bar" value="20%">
-                                    <div className="progress-line" style={{ maxWidth: '20%' }}></div>
+                                <div className="subject">Git</div>
+                                <div className="progress-bar" value="70%">
+                                    <div className="progress-line" style={{ maxWidth: '70%' }}></div>
                                 </div>
                             </div>
                         </div>
@@ -209,12 +209,6 @@ export default function SkillBar() {
                         <div className="skills-container">
                             <div className="skill">
                                 <div className="subject">Figma</div>
-                                <div className="progress-bar" value="75%">
-                                    <div className="progress-line" style={{ maxWidth: '75%' }}></div>
-                                </div>
-                            </div>
-                            <div className="skill">
-                                <div className="subject">Git</div>
                                 <div className="progress-bar" value="75%">
                                     <div className="progress-line" style={{ maxWidth: '75%' }}></div>
                                 </div>
@@ -230,15 +224,15 @@ export default function SkillBar() {
                     <section className="skill_col">
                         <div className="skills-container">
                             <div className="skill">
-                                <div className="subject">Leadership</div>
-                                <div className="progress-bar" value="70%">
-                                    <div className="progress-line" style={{ maxWidth: '70%' }}></div>
-                                </div>
-                            </div>
-                            <div className="skill">
                                 <div className="subject">Teamwork</div>
                                 <div className="progress-bar" value="90%">
                                     <div className="progress-line" style={{ maxWidth: '90%' }}></div>
+                                </div>
+                            </div>
+                            <div className="skill">
+                                <div className="subject">Leadership</div>
+                                <div className="progress-bar" value="60%">
+                                    <div className="progress-line" style={{ maxWidth: '60%' }}></div>
                                 </div>
                             </div>
                         </div>
@@ -266,6 +260,12 @@ export default function SkillBar() {
                                 <div className="subject">Attention to detail</div>
                                 <div className="progress-bar" value="85%">
                                     <div className="progress-line" style={{ maxWidth: '85%' }}></div>
+                                </div>
+                            </div>
+                            <div className="skill">
+                                <div className="subject">Multi-tasking</div>
+                                <div className="progress-bar" value="70%">
+                                    <div className="progress-line" style={{ maxWidth: '70%' }}></div>
                                 </div>
                             </div>
                         </div>

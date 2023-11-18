@@ -1,8 +1,12 @@
-import React from 'react'
-import AnimatedCursor from "react-animated-cursor"
-
+import React from 'react';
+import { isMobile } from 'react-device-detect';
+import AnimatedCursor from 'react-animated-cursor';
 
 export default function AnimatedCursorComponent() {
+  if (isMobile) {
+    return null;
+  }
+
   return (
     <AnimatedCursor
       style={{ zIndex: 999 }}
@@ -14,10 +18,10 @@ export default function AnimatedCursorComponent() {
       outerAlpha={0}
       hasBlendMode={true}
       innerStyle={{
-        backgroundColor: '#000'
+        backgroundColor: '#000',
       }}
       outerStyle={{
-        border: '3px solid #000'
+        border: '3px solid #000',
       }}
       clickables={[
         'a',
@@ -33,5 +37,5 @@ export default function AnimatedCursorComponent() {
         '.link',
       ]}
     />
-  )
+  );
 }

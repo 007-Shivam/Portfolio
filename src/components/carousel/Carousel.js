@@ -86,7 +86,7 @@ export default function Carousel() {
           </Slider>
         </div>
       </LightSpeed>
-      
+
     </div>
   );
 }
@@ -104,6 +104,12 @@ const data = [
     img: ACM,
     review: `Website for BVPDET ACM Students Chapter, fostering community and advancing computing knowledge among members.`,
     link: 'https://github.com/BVDUDET-ACM-Student-Chapter/BVDUDET-ACM-Website'
+  },
+  {
+    name: `Forecastify`,
+    img: Weather,
+    review: `Forecastify: Sleek ReactJS app offering real-time global weather updates, ensuring modern, user-friendly access anywhere, anytime.`,
+    link: 'https://github.com/007-Shivam/Forecastify'
   },
   {
     name: `Little Lemon`,
@@ -124,13 +130,6 @@ const data = [
     img: Quiz,
     review: `A Dart-based quiz app for interactive knowledge tests, providing instant feedback to users on their answers.`,
     link: 'https://github.com/007-Shivam/simplequizapp'
-  },
-  {
-    name: `Weather App`,
-    img: Weather,
-    review: `A Python GUI program in which you enter the city, and it will show you the current weather
-    condition of that city.`,
-    link: 'https://github.com/007-Shivam/weatherapp'
   },
   {
     name: `Feedfolks`,

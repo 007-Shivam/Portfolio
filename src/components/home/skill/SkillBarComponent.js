@@ -128,6 +128,12 @@ export default function SkillBar() {
                                     <div className="progress-line" style={{ maxWidth: '65%' }}></div>
                                 </div>
                             </div>
+                            <div className="skill">
+                                <div className="subject">Tailwind CSS</div>
+                                <div className="progress-bar" value="30%">
+                                    <div className="progress-line" style={{ maxWidth: '30%' }}></div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 

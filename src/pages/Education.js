@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Footer from '../components/footer/FooterComponent'
 import EducationComponent from '../components/education/edu/EduComponent'
 import ProfilesComponent from '../components/education/profiles/ProfilesComponent'
@@ -12,6 +13,5 @@ export default function Education() {
       <CertificateComponent />
       <Footer />
     </div>
-
   )
 }

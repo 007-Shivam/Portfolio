@@ -14,7 +14,7 @@ export default function Footer() {
           </div>
 
           <div className="footerBottom">
-            <p>Copyright &copy;2023 Designed by <span className="designer">Shivam Bhosle</span></p>
+            <p>Copyright &copy;2023 Designed by <span className="my-name">Shivam Bhosle</span></p>
           </div>
         </div>
       </footer>

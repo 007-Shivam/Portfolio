@@ -151,7 +151,7 @@ const data = [
     ML: 'ML',
     img: Eye,
     review: `Utilizing Machine Learning to Detect Eye Openness/Closure from EEG Data.
-    Research Paper submitted at IEEE.`,
+    Research Paper accepted at IEEE.`,
     link: 'https://github.com/007-Shivam/Eye_State_Prediction',
   },
   {

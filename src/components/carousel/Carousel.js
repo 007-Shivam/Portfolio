@@ -21,6 +21,7 @@ import Restaurant from '../../assets/projects/res.png'
 import Weather from '../../assets/projects/weather.png'
 import ToDo from '../../assets/projects/todo.png'
 import Booking from '../../assets/projects/booking.jpg'
+import Portfolio from '../../assets/projects/portfolio.jpg'
 
 
 
@@ -151,7 +152,7 @@ const data = [
     ML: 'ML',
     img: Eye,
     review: `Utilizing Machine Learning to Detect Eye Openness/Closure from EEG Data.
-    Research Paper accepted at IEEE.`,
+    Research Paper accepted at Scopus.`,
     link: 'https://github.com/007-Shivam/Eye_State_Prediction',
   },
   {
@@ -163,8 +164,19 @@ const data = [
     website: 'https://bvdudet-acm-website-000.web.app/'
   },
   {
+    name: `Portfolio`,
+    ReactJS: 'ReactJS',
+    CSS: 'CSS',
+    img: Portfolio,
+    review: `Showcasing my diverse skills and projects through a sleek portfolio website. Explore my journey here!`,
+    link: 'https://github.com/007-Shivam/Portfolio',
+    website: 'https://shivambhosle.vercel.app/'
+
+  },
+  {
     name: `Forecastify`,
     ReactJS: 'ReactJS',
+    CSS: 'CSS',
     API: 'API',
     img: Weather,
     review: `Sleek ReactJS app offering real-time global weather updates, ensuring modern, user-friendly access anywhere, anytime.`,
@@ -175,6 +187,7 @@ const data = [
   {
     name: `Priority Pal`,
     ReactJS: 'ReactJS',
+    CSS: 'CSS',
     img: ToDo,
     review: `Your trusty companion for seamless task management, helping you prioritize and conquer your to-do list with ease.`,
     link: 'https://github.com/007-Shivam/Priority-Pal',

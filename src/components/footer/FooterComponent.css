@@ -51,10 +51,10 @@ footer {
 
 /* Portfolio */
 .socialIcons .glb:hover {
-  background-color: #21d0b2;
+  background-color: rgb(253, 78, 78);
   transition: 0.5s;
 }
-.socialIcons .glbhover i {
+.socialIcons .glb:hover i {
   color: white;
   transition: 0.5s;
 }

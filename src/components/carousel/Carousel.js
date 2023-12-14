@@ -167,6 +167,7 @@ const data = [
     name: `Portfolio`,
     ReactJS: 'ReactJS',
     CSS: 'CSS',
+    Tailwind: 'Tailwind',
     img: Portfolio,
     review: `Showcasing my diverse skills and projects through a sleek portfolio website. Explore my journey here!`,
     link: 'https://github.com/007-Shivam/Portfolio',

@@ -19,7 +19,7 @@ export default function Hero() {
                     <div className="mt-2 mb-2 socialIcons">
                         <a className="likd" href="https://www.linkedin.com/in/shivambhosle007/" target='_blank' rel="noreferrer"><i className="fa fa-linkedin"></i></a>
                         <a className="git" href="https://github.com/007-Shivam" target='_blank' rel="noreferrer"><i className="fa fa-github"></i></a>
-                        <a className="glb" href="https://shivambhosle.vercel.app/"><i className="fa fa-globe"></i></a>
+                        <a className="glb" href="mailto:shivam.bhosle@yahoo.com"><i className="fa fa-envelope"></i></a>
                         <a className="inst" href="https://instagram.com/shivam__2709?igshid=MmVlMjlkMTBhMg==" target='_blank' rel="noreferrer"><i className="fa fa-instagram"></i></a>
                     </div>
                 </Flip>

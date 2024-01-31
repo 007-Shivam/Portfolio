@@ -16,7 +16,7 @@ export default function Hero() {
                 <p className="bld">Shivam Bhosle.</p>
                 <p className="my-des">I am a passionate Frontend Developer based in India.<br />Welcome to my Portfolio </p>
                 <Flip top >
-                    <div className="mt-2 mb-2 socialIcons">
+                    <div className="mt-5 mb-4 socialIcons">
                         <a className="likd" href="https://www.linkedin.com/in/shivambhosle007/" target='_blank' rel="noreferrer"><i className="fa fa-linkedin"></i></a>
                         <a className="git" href="https://github.com/007-Shivam" target='_blank' rel="noreferrer"><i className="fa fa-github"></i></a>
                         <a className="glb" href="mailto:shivam.bhosle@yahoo.com"><i className="fa fa-envelope"></i></a>

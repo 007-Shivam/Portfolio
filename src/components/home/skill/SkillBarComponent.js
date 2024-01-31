@@ -151,6 +151,12 @@ export default function SkillBar() {
                                     <div className="progress-line" style={{ maxWidth: '60%' }}></div>
                                 </div>
                             </div>
+                            <div className="skill">
+                                <div className="subject">Beautiful Soup</div>
+                                <div className="progress-bar" value="40%">
+                                    <div className="progress-line" style={{ maxWidth: '40%' }}></div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -166,6 +172,12 @@ export default function SkillBar() {
                                 <div className="subject">Jetpack Compose</div>
                                 <div className="progress-bar" value="60%">
                                     <div className="progress-line" style={{ maxWidth: '60%' }}></div>
+                                </div>
+                            </div>
+                            <div className="skill">
+                                <div className="subject">Selenium</div>
+                                <div className="progress-bar" value="30%">
+                                    <div className="progress-line" style={{ maxWidth: '30%' }}></div>
                                 </div>
                             </div>
                         </div>

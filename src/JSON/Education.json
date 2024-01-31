@@ -1,0 +1,21 @@
+[
+    {
+      "institution": "Bharati Vidyapeeth Deemed University Department of Engineering & Technology, Navi Mumbai",
+      "duration": "2021 - Present",
+      "description": "I am currently pursuing my B.Tech, and my current CGPA is 9.85.",
+      "image": "https://i.imgur.com/Lg97Ggl.png"
+    },
+    {
+      "institution": "Nirmala Memorial Foundation College of Commerce & Science, Mumbai",
+      "duration": "2019 - 2021",
+      "description": "I have successfully completed my intermediate education from the HSC board with a remarkable score of 94.33%.",
+      "image": "https://i.imgur.com/1nI6akH.png"
+    },
+    {
+      "institution": "Oxford Public School",
+      "duration": "2006 - 2019",
+      "description": "I have completed my matriculation from the SSC board with a score of 86.40%.",
+      "image": "https://i.imgur.com/LPdhB6u.png"
+    }
+  ]
+  

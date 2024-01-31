@@ -3,72 +3,13 @@ import './CertificateComponent.css';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import Certificate1 from '../../../assets/certificates/Intro to Android Mobile Application Development.png';
-import Certificate2 from '../../../assets/certificates/Principles of UXUI Design.png';
-import Certificate3 from '../../../assets/certificates/Version Control.png';
-import Certificate4 from '../../../assets/certificates/Create UI using Android Studio.png';
-import Certificate5 from '../../../assets/certificates/Programming Fundamentals in Kotlin.png';
-import Certificate6 from '../../../assets/certificates/Advanced Programming in Kotlin.png';
-import Certificate7 from '../../../assets/certificates/Working with Data in Android.png';
-import Certificate8 from '../../../assets/certificates/Mobile Development and JavaScript.png';
-
+import Certificate from '../../../JSON/Certificates.json'
 
 
 export default function CertificateComponent() {
     useEffect(() => {
         AOS.init({ duration: 2000 });
     }, []);
-
-    const certificatesData = [
-        {
-            image: Certificate1,
-            title: 'Meta - Intro to Android Mobile Application Development',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/EC2LAUP6DB75',
-        },
-        {
-            image: Certificate2,
-            title: 'Meta - Principles of UXUI Design',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/9WEHXFX58EQH',
-        },
-        {
-            image: Certificate3,
-            title: 'Meta - Version Control',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/GYHGF9J2EZSJ',
-        },
-        {
-            image: Certificate4,
-            title: 'Meta - Create UI using Android Studio',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/SDBADT6XQBT8',
-        },
-        {
-            image: Certificate5,
-            title: 'Meta - Programming Fundamentals in Kotlin',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/J4AR7LGH7YJB',
-        },
-        {
-            image: Certificate6,
-            title: 'Meta - Advanced Programming in Kotlin',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/DBDHR8KZCN76',
-        },
-        {
-            image: Certificate7,
-            title: 'Meta - Working with Data in Android',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/FPX9HY2JWM7V',
-        },
-        {
-            image: Certificate8,
-            title: 'Meta - Mobile Development and JavaScript',
-            text: '- Meta Inc, Coursera',
-            link: 'https://www.coursera.org/account/accomplishments/certificate/7V2BX74H2KNF',
-        },
-    ];
 
     const handleClick = (link) => {
         window.open(link, '_blank', 'noreferrer');
@@ -80,7 +21,7 @@ export default function CertificateComponent() {
                 <p className="my-profiles">Certificates</p>
             </div>
             <ul className="all-cards">
-                {certificatesData.map((certificate, index) => (
+                {Certificate.map((certificate, index) => (
                     <li key={index} className="main_cards_item">
                         <div className="the-card" onClick={() => handleClick(certificate.link)} style={{ cursor: 'pointer' }}>
                             <div className="card_image">

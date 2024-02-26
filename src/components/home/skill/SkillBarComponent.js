@@ -11,7 +11,7 @@ export default function SkillBar() {
     return (
         <mainContainer>
             <div className="skill_cont">
-                <div className="sub-title" data-aos="fade-up">
+                <div className="font-bold sub-title" data-aos="fade-up">
                     <h2>Programming Skills</h2>
                 </div>
 
@@ -110,7 +110,7 @@ export default function SkillBar() {
                     </section>
                 </div>
 
-                <div className="sub-title" data-aos="fade-up">
+                <div className="font-bold sub-title" data-aos="fade-up">
                     <h2>Libraries / Frameworks</h2>
                 </div>
                 <div className="skill_row" data-aos="fade-up">
@@ -184,7 +184,7 @@ export default function SkillBar() {
                     </section>
                 </div>
 
-                <div className="sub-title" data-aos="fade-up">
+                <div className="font-bold sub-title" data-aos="fade-up">
                     <h2>Tools / Platforms</h2>
                 </div>
 
@@ -235,7 +235,7 @@ export default function SkillBar() {
                     </section>
                 </div>
 
-                <div className="sub-title" data-aos="fade-up">
+                <div className="font-bold sub-title" data-aos="fade-up">
                     <h2>Softskills</h2>
                 </div>
                 <div className="skill_row" data-aos="fade-up">

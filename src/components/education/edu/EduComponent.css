@@ -154,7 +154,7 @@
 
   .left-container-arrow,
   .right-container-arrow {
-    border-right: 50px solid #000;
+    border-right: 50px solid #fff;
     border-left: 0;
     left: -25px;
   }

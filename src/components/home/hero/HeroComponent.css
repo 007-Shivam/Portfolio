@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
+.hero-container {
+  margin-top: 18vh;
+  margin-left: 12vh;
+  display: flex;
+}
+
 .me-container {
   text-align: right;
   position: relative;
 }
 
 .green-circles {
-  margin-right: 120px;
+  margin-right: 70px;
   background-repeat: no-repeat;
   height: 41em;
   position: absolute;
@@ -17,7 +23,7 @@
 }
 
 .me {
-  margin-right: 135px;
+  margin-right: 85px;
   background-repeat: no-repeat;
   height: 43em;
   position: absolute;
@@ -25,11 +31,6 @@
   z-index: 10;
   padding-block: 50px;
   margin-top: -150px;
-}
-
-.hero-container {
-  padding-top: 18vh;
-  display: flex;
 }
 
 .hero-container>div {

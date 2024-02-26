@@ -1,0 +1,37 @@
+.calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.contri-title {
+	margin: 150px 150px 30px 150px;
+}
+
+.contri-title h2 {
+	position: relative;
+	color: #242223;
+	font-size: 22px;
+	font-family: helvetica;
+	display: inline-block;
+}
+.contri-title h2::before {
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	top: 125%;
+	left: 0;
+	background-color: #808080;
+}
+
+.contri-title h2::after {
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 3px;
+	top: calc(125% - 1px);
+	left: 0;
+	background-color: #d03645;
+}

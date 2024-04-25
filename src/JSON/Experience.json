@@ -1,57 +1,70 @@
 [
-    {
-      "title": "VibeByte Media",
-      "role": "Software Developer Intern",
-      "type": "Internship",
-      "duration": "Jan 2024 - Feb 2024",
-      "responsibilities": [
-        "Applying Python proficiency to craft advanced web scraping software.",
-        "Utilizing frameworks such as BeautifulSoup and Selenium for optimal data extraction.",
-        "Implementing new technologies strategically.",
-        "Collaborated with a team of 5 members to implement innovative features."
-      ],
-      "image": "https://i.imgur.com/ifog1za.jpg"
-    },
-    {
-      "title": "Association for Computing Machinery BVPDET-NM",
-      "role": "Web Master",
-      "type": "Full Time",
-      "duration": "Sept 2023 - Present",
-      "responsibilities": [
-        "Website management and content updates.",
-        "User experience and design enhancements.",
-        "Collaboration with ACM teams.",
-        "Implementing new web technologies strategically.",
-        "Collaborated with a team of 5 members to implement innovative features on the website."
-      ],
-      "image": "https://i.imgur.com/FlyTy3U.jpg"
-    },
-    {
-      "title": "Edunet Foundation",
-      "role": "Artificial Intelligence Intern",
-      "type": "Internship",
-      "duration": "Jun 2023 - Jul 2023",
-      "responsibilities": [
-        "Completed assigned tasks and milestone.",
-        "Delivering a project presentation.",
-        "Solving real-world challenges in AI.",
-        "Valuable experience enhancing skills in AI and professional growth.",
-        "Earned certifications from IBM and Edunet Foundation."
-      ],
-      "image": "https://i.imgur.com/SVYW3VV.png"
-    },
-    {
-      "title": "AIESEC",
-      "role": "Facilitator",
-      "type": "One day Volunteer",
-      "duration": "April 2023",
-      "responsibilities": [
-        "Empowering youth through education initiatives.",
-        "Facilitating transformative learning experiences.",
-        "Empowering young minds for global impact.",
-        "Educating and inspiring for positive change."
-      ],
-      "image": "https://i.imgur.com/0bLQLGF.png"
-    }
-  ]
-  
+  {
+    "title": "Career Corps",
+    "role": "Android Developer Intern",
+    "type": "Internship",
+    "duration": "Apr 2024 - Present",
+    "responsibilities": [
+      "Assist in Android app development.",
+      "Contribute to codebase enhancement.",
+      "Debug and troubleshoot issues in the app.",
+      "Assist in UI/UX design and implementation.",
+      "Participate in team meetings and discussions."
+    ],
+    "image": "https://i.imgur.com/WeSzR2U.png"
+  },
+  {
+    "title": "VibeByte Media",
+    "role": "Software Developer Intern",
+    "type": "Internship",
+    "duration": "Jan 2024 - Feb 2024",
+    "responsibilities": [
+      "Applying Python proficiency to craft advanced web scraping software.",
+      "Utilizing frameworks such as BeautifulSoup and Selenium for optimal data extraction.",
+      "Implementing new technologies strategically.",
+      "Collaborated with a team of 5 members to implement innovative features."
+    ],
+    "image": "https://i.imgur.com/ifog1za.jpg"
+  },
+  {
+    "title": "Association for Computing Machinery BVPDET-NM",
+    "role": "Web Master",
+    "type": "Full Time",
+    "duration": "Sept 2023 - May 2024",
+    "responsibilities": [
+      "Website management and content updates.",
+      "User experience and design enhancements.",
+      "Collaboration with ACM teams.",
+      "Implementing new web technologies strategically.",
+      "Collaborated with a team of 5 members to implement innovative features on the website."
+    ],
+    "image": "https://i.imgur.com/FlyTy3U.jpg"
+  },
+  {
+    "title": "Edunet Foundation",
+    "role": "Artificial Intelligence Intern",
+    "type": "Internship",
+    "duration": "Jun 2023 - Jul 2023",
+    "responsibilities": [
+      "Completed assigned tasks and milestone.",
+      "Delivering a project presentation.",
+      "Solving real-world challenges in AI.",
+      "Valuable experience enhancing skills in AI and professional growth.",
+      "Earned certifications from IBM and Edunet Foundation."
+    ],
+    "image": "https://i.imgur.com/SVYW3VV.png"
+  },
+  {
+    "title": "AIESEC",
+    "role": "Facilitator",
+    "type": "One day Volunteer",
+    "duration": "April 2023",
+    "responsibilities": [
+      "Empowering youth through education initiatives.",
+      "Facilitating transformative learning experiences.",
+      "Empowering young minds for global impact.",
+      "Educating and inspiring for positive change."
+    ],
+    "image": "https://i.imgur.com/0bLQLGF.png"
+  }
+]

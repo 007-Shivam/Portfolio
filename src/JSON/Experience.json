@@ -14,6 +14,19 @@
     "image": "https://i.imgur.com/WeSzR2U.png"
   },
   {
+    "title": "Lance IP",
+    "role": "Web Developer",
+    "type": "Freelance",
+    "duration": "Jun 2024",
+    "responsibilities": [
+      "Implementing e-commerce functionality using plugins like WooCommerce on Wordpress.",
+      "Integrating third-party services and APIs for enhanced functionality.",
+      "Implementing new technologies strategically.",
+      "Implementing responsive design principles to ensure the website works well on different devices."
+    ],
+    "image": "https://i.imgur.com/0B7Gy7I.png"
+  },
+  {
     "title": "VibeByte Media",
     "role": "Software Developer Intern",
     "type": "Internship",
@@ -30,7 +43,7 @@
     "title": "Association for Computing Machinery BVPDET-NM",
     "role": "Web Master",
     "type": "Full Time",
-    "duration": "Sept 2023 - May 2024",
+    "duration": "Sept 2023 - Aug 2024",
     "responsibilities": [
       "Website management and content updates.",
       "User experience and design enhancements.",

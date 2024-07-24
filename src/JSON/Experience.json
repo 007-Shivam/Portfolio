@@ -1,9 +1,33 @@
 [
   {
+    "title": "Lance IP",
+    "role": "Web Administrator",
+    "type": "Retainer",
+    "duration": "Jul 2024 - Present",
+    "responsibilities": [
+      "Manage and maintain the company website, ensuring regular updates and smooth operation.",
+      "Optimize website content for search engines."
+    ],
+    "image": "https://i.imgur.com/0B7Gy7I.png"
+  },
+  {
+    "title": "Lance IP",
+    "role": "Web Developer",
+    "type": "Freelancer",
+    "duration": "Jun 2024 - Jul 2024",
+    "responsibilities": [
+      "Creted a sub-domain & implementing e-commerce functionality using plugins like WooCommerce on Wordpress.",
+      "Integrating third-party services and APIs for enhanced functionality.",
+      "Implementing new technologies strategically.",
+      "Implementing responsive design principles to ensure the website works well on different devices."
+    ],
+    "image": "https://i.imgur.com/0B7Gy7I.png"
+  },
+  {
     "title": "Career Corps",
     "role": "Android Developer Intern",
     "type": "Internship",
-    "duration": "Apr 2024 - Present",
+    "duration": "Apr 2024 - Jul 2024",
     "responsibilities": [
       "Assist in Android app development.",
       "Contribute to codebase enhancement.",
@@ -12,19 +36,6 @@
       "Participate in team meetings and discussions."
     ],
     "image": "https://i.imgur.com/WeSzR2U.png"
-  },
-  {
-    "title": "Lance IP",
-    "role": "Web Developer",
-    "type": "Freelance",
-    "duration": "Jun 2024",
-    "responsibilities": [
-      "Implementing e-commerce functionality using plugins like WooCommerce on Wordpress.",
-      "Integrating third-party services and APIs for enhanced functionality.",
-      "Implementing new technologies strategically.",
-      "Implementing responsive design principles to ensure the website works well on different devices."
-    ],
-    "image": "https://i.imgur.com/0B7Gy7I.png"
   },
   {
     "title": "VibeByte Media",

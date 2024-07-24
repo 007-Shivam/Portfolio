@@ -134,6 +134,12 @@ export default function SkillBar() {
                                     <div className="progress-line" style={{ maxWidth: '30%' }}></div>
                                 </div>
                             </div>
+                            <div className="skill">
+                                <div className="subject">React Native</div>
+                                <div className="progress-bar" value="25%">
+                                    <div className="progress-line" style={{ maxWidth: '25%' }}></div>
+                                </div>
+                            </div>
                         </div>
                     </section>
 

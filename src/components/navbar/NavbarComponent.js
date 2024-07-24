@@ -9,9 +9,9 @@ export default function Navbar() {
   const location = useLocation();
 
   const closeNav = () => {
-    setIsNavOpen(false);
-  };
-
+    setIsNavOpen(false); 
+  };   
+  
   return (
     <header className="nav_header">
       <div className="nv_logo" onClick={closeNav} style={{ cursor: 'pointer' }}>

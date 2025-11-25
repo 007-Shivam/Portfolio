@@ -1,21 +1,34 @@
 [
     {
-      "institution": "Bharati Vidyapeeth Deemed University Department of Engineering & Technology, Navi Mumbai",
-      "duration": "2021 - Present",
-      "description": "I am currently pursuing my B.Tech, and my current CGPA is 9.85.",
-      "image": "https://i.imgur.com/Lg97Ggl.png"
+        "institution": "University of Southern California",
+        "duration": "2025 - Present",
+        "scoreType": "CGPA",
+        "scoreValue": "4",
+        "image": "https://imgur.com/32V9ueN.png",
+        "location": "Los Angeles, CA"
     },
     {
-      "institution": "Nirmala Memorial Foundation College of Commerce & Science, Mumbai",
-      "duration": "2019 - 2021",
-      "description": "I have successfully completed my intermediate education from the HSC board with a remarkable score of 94.33%.",
-      "image": "https://i.imgur.com/1nI6akH.png"
+        "institution": "Bharati Vidyapeeth Deemed University Dept of Eng & Tech",
+        "duration": "2021 - 2025",
+        "scoreType": "CGPA",
+        "scoreValue": "9.85",
+        "image": "https://imgur.com/xrcsvrt.png",
+        "location": "Navi Mumbai, India"
     },
     {
-      "institution": "Oxford Public School",
-      "duration": "2006 - 2019",
-      "description": "I have completed my matriculation from the SSC board with a score of 86.40%.",
-      "image": "https://i.imgur.com/LPdhB6u.png"
+        "institution": "Nirmala Memorial Foundation College of Commerce & Science",
+        "duration": "2019 - 2021",
+        "scoreType": "Percentage",
+        "scoreValue": "94.33%",
+        "image": "https://imgur.com/ZRFThNY.png",
+        "location": "Mumbai, India"
+    },
+    {
+        "institution": "Oxford Public School",
+        "duration": "2019",
+        "scoreType": "Percentage",
+        "scoreValue": "86.40%",
+        "image": "https://imgur.com/CGtgleR.png",
+        "location": "Mumbai, India"
     }
-  ]
-  
+]

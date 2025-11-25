@@ -1,166 +1,288 @@
 [
     {
-      "name": "Eye State Prediction",
-      "Python": "Python",
-      "ML": "ML",
-      "img": "https://i.imgur.com/5GamJ5U.jpg",
-      "review": "Utilizing Machine Learning to Detect Eye Openness/Closure from EEG Data. Research Paper has been presented.",
-      "link": "https://github.com/007-Shivam/Eye_State_Prediction"
+        "id": 1,
+        "image": "https://imgur.com/h0Ae4iR.png",
+        "title": "Enhancing Mammogram Analysis: Pectoral Muscle Removal & BI-RADS Classification",
+        "description": "An AI-powered mammogram analysis tool for automated pectoral muscle removal and BI-RADS classification using hybrid Isolation Forest-CNN models.",
+        "tags": [
+            "Python",
+            "CV",
+            "CNN"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Enhancing_Mammogram_Analysis-Pectoral_Muscle_Removal_an_BI-RADS_Classification_with_AI",
+        "demoLink": ""
     },
     {
-      "name": "BVDUDET ACM-SC Website",
-      "ReactJS": "ReactJS",
-      "Bootstrap": "Bootstrap",
-      "Scss": "Scss",
-      "img": "https://i.imgur.com/FlyTy3U.jpg",
-      "review": "BVPDET ACM Students Chapter website: Fostering community, advancing computing knowledge.",
-      "link": "https://github.com/BVDUDET-ACM-Student-Chapter/BVDUDET-ACM-Website",
-      "website": "https://bvdudet-acm-website-000.web.app/"
+        "id": 2,
+        "image": "https://i.imgur.com/5GamJ5U.jpg",
+        "title": "Eye State Prediction",
+        "description": "Utilizing Machine Learning to Detect Eye Openness/Closure from EEG Data. Research Paper has been presented.",
+        "tags": [
+            "Python",
+            "ML"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Eye_State_Prediction",
+        "demoLink": ""
     },
     {
-      "name": "Waste Classification using VGG-16",
-      "ML": "DL",
-      "Python": "Python",
-      "img": "https://i.imgur.com/GFW8DmM.png",
-      "review": "CNN architecture to classify waste into two categories: recycle waste and organic waste.",
-      "link": "https://github.com/007-Shivam/Waste-Classification-using-VGG16"
+        "id": 3,
+        "image": "https://imgur.com/WD7yo2M.png",
+        "title": "CommitAI",
+        "description": "An AI-powered CLI tool that automatically generates conventional commit messages by analyzing Git diffs using LLMs, with optional pre-commit hook integration.",
+        "tags": [
+            "LLM",
+            "Python"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/CommitAI",
+        "demoLink": ""
     },
     {
-      "name": "Sanket",
-      "Kotlin": "Kotlin",
-      "Jetpack": "Jetpack Compose",
-      "img": "https://i.imgur.com/mUnCr11.jpg",
-      "review": "Innovative sign language app fosters inclusivity, bridging gap for hearing impaired by empowering expressive gestures.",
-      "link": "https://github.com/007-Shivam/Sanket"
+        "id": 4,
+        "image": "https://imgur.com/1GQ2Nm9.png",
+        "title": "EventExplorer",
+        "description": "A full-stack event discovery web app with search, favorites, and detailed event views using React, Node.js, and multiple APIs.",
+        "tags": [
+            "Node",
+            "React",
+            "APIs"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/CSCI571_WebTech/tree/main/Assignment/Assignment%203/Shivam_WebTech_A3",
+        "demoLink": "https://webtech-a3-dot-starry-odyssey-471519-b4.wl.r.appspot.com/"
     },
     {
-      "name": "Hair Harmony",
-      "Kotlin": "Kotlin",
-      "Jetpack": "Jetpack Compose",
-      "img": "https://i.imgur.com/nLiXQN2.jpg",
-      "review": "Hair Harmony is an application designed to facilitate the process of hair donation at centers.",
-      "link": "https://github.com/007-Shivam/Hair_Harmony"
+        "id": 5,
+        "image": "https://imgur.com/wjsV33n.png",
+        "title": "Lane Detection",
+        "description": "A computer vision pipeline that detects road lane lines using HSL color filtering, Canny edge detection, and Hough transforms with frame-to-frame smoothing for autonomous driving applications.",
+        "tags": [
+            "Python",
+            "CV"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Lane_Detection",
+        "demoLink": ""
     },
     {
-      "name": "Portfolio",
-      "ReactJS": "ReactJS",
-      "CSS": "CSS",
-      "Tailwind": "Tailwind",
-      "img": "https://i.imgur.com/Vylay9Z.jpg",
-      "review": "Showcasing my diverse skills and projects through a sleek portfolio website. Explore my journey here!",
-      "link": "https://github.com/007-Shivam/Portfolio",
-      "website": "https://shivambhosle.vercel.app/"
+        "id": 6,
+        "image": "https://imgur.com/NvN5IuE.png",
+        "title": "Sentiment Analysis",
+        "description": "A sentiment analysis tool that classifies IMDB movie reviews as positive or negative using machine learning models, with Logistic Regression achieving 89% accuracy.",
+        "tags": [
+            "Python",
+            "ML"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/IMDB_Reviews_Sentiment_Analysis",
+        "demoLink": ""
     },
     {
-      "name": "Forecastify",
-      "ReactJS": "ReactJS",
-      "CSS": "CSS",
-      "API": "API",
-      "img": "https://i.imgur.com/643wsOT.png",
-      "review": "Sleek ReactJS app offering real-time global weather updates, ensuring modern, user-friendly access anywhere, anytime.",
-      "link": "https://github.com/007-Shivam/Forecastify",
-      "website": "https://forecastify-app.vercel.app/"
+        "id": 7,
+        "image": "https://imgur.com/8D5mctr.png",
+        "title": "Githubify",
+        "description": "An Android app built with Jetpack Compose for exploring GitHub profiles and repositories, featuring user search, detailed profiles, and repository information.",
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose",
+            "APIs"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Githubify",
+        "demoLink": ""
     },
     {
-      "name": "Priority Pal",
-      "ReactJS": "ReactJS",
-      "CSS": "CSS",
-      "img": "https://i.imgur.com/W0vdNL8.png",
-      "review": "Your trusty companion for seamless task management, helping you prioritize and conquer your to-do list with ease.",
-      "link": "https://github.com/007-Shivam/Priority-Pal",
-      "website": "https://priority-pal.onrender.com"
+        "id": 8,
+        "image": "https://i.imgur.com/FlyTy3U.jpg",
+        "title": "BVDUDET ACM-SC Website",
+        "description": "BVPDET ACM Students Chapter website: Fostering community, advancing computing knowledge.",
+        "tags": [
+            "ReactJS",
+            "Bootstrap",
+            "Scss"
+        ],
+        "learnMoreLink": "https://github.com/BVDUDET-ACM-Student-Chapter/BVDUDET-ACM-Website",
+        "demoLink": "https://bvdudet-acm-website-000.web.app/"
     },
     {
-      "name": "Restaurant Booking Service",
-      "ReactJS": "ReactJS",
-      "Tailwind": "Tailwind",
-      "img": "https://i.imgur.com/ldhwE2X.png",
-      "review": "Effortlessly reserve your table at the finest restaurants with our seamless and user-friendly booking service.",
-      "link": "https://github.com/007-Shivam/Restaurant-Booking-Service",
-      "website": "https://restaurant-booking-service.vercel.app/"
+        "id": 9,
+        "image": "https://i.imgur.com/GFW8DmM.png",
+        "title": "Waste Classification using VGG-16",
+        "description": "CNN architecture to classify waste into two categories: recycle waste and organic waste.",
+        "tags": [
+            "Python",
+            "DL"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Waste-Classification-using-VGG16",
+        "demoLink": ""
     },
     {
-      "name": "Little Lemon",
-      "Kotlin": "Kotlin",
-      "Jetpack": "Jetpack Compose",
-      "img": "https://i.imgur.com/r2ljzsY.jpg",
-      "review": "Little Lemon is a delightful restaurant menu browsing app developed using Kotlin Jetpack Compose.",
-      "link": "https://github.com/007-Shivam/Little_Lemon"
+        "id": 10,
+        "image": "https://i.imgur.com/mUnCr11.jpg",
+        "title": "Sanket",
+        "description": "Innovative sign language app fosters inclusivity, bridging gap for hearing impaired by empowering expressive gestures.",
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Sanket",
+        "demoLink": ""
     },
     {
-      "name": "CSE-AIML Website",
-      "HTML": "HTML",
-      "CSS": "CSS",
-      "Javascript": "Javascript",
-      "img": "https://i.imgur.com/YMu8DHG.jpg",
-      "review": "A website created for my College for the CSE-AIML branch of engineering for students, parents, and teachers.",
-      "link": "https://github.com/007-Shivam/CSE-AIML-Website"
+        "id": 11,
+        "image": "https://i.imgur.com/nLiXQN2.jpg",
+        "title": "Hair Harmony",
+        "description": "Hair Harmony is an application designed to facilitate the process of hair donation at centers.",
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Hair_Harmony",
+        "demoLink": ""
     },
     {
-      "name": "Simple Quiz App",
-      "Dart": "Dart",
-      "img": "https://i.imgur.com/slftMhe.jpg",
-      "review": "A Dart-based quiz app for interactive knowledge tests, providing instant feedback to users on their answers.",
-      "link": "https://github.com/007-Shivam/simplequizapp"
+        "id": 12,
+        "image": "https://imgur.com/UeuC6QN.jpg",
+        "title": "Portfolio",
+        "description": "Showcasing my diverse skills and projects through a sleek portfolio website. Explore my journey here!",
+        "tags": [
+            "ReactJS",
+            "Tailwind"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Portfolio",
+        "demoLink": "https://shivambhosle.vercel.app/"
     },
     {
-      "name": "Feedfolks",
-      "Figma": "Figma",
-      "img": "https://i.imgur.com/DzfNngv.jpg",
-      "review": "Mobile app designed to aid in feeding the hungry, streamlining assistance to those in need.",
-      "link": "https://github.com/007-Shivam/FeedFolks"
+        "id": 13,
+        "image": "https://i.imgur.com/643wsOT.png",
+        "title": "Forecastify",
+        "description": "Sleek ReactJS app offering real-time global weather updates, ensuring modern, user-friendly access anywhere, anytime.",
+        "tags": [
+            "ReactJS",
+            "API"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Forecastify",
+        "demoLink": "https://forecastify-app.vercel.app/"
     },
     {
-      "name": "Restaurant Reservation System Design",
-      "Figma": "Figma",
-      "img": "https://i.imgur.com/2z9Gup4.png",
-      "review": "UI design for reservation system of a restaurant.",
-      "link": "https://github.com/007-Shivam/Restaurant_Reservation_System_Design"
+        "id": 14,
+        "image": "https://i.imgur.com/W0vdNL8.png",
+        "title": "Priority Pal",
+        "description": "Your trusty companion for seamless task management, helping you prioritize and conquer your to-do list with ease.",
+        "tags": [
+            "ReactJS"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Priority-Pal",
+        "demoLink": "https://priority-pal.onrender.com"
     },
     {
-      "name": "Meal Planner Expert System",
-      "Python": "Python",
-      "AI": "AI",
-      "img": "https://i.imgur.com/J7Nfxeu.png",
-      "review": "A Python Program with a knowledge base to suggest a nutritional intake according to BMR calculated.",
-      "link": "https://github.com/007-Shivam/Meal_Planner_Expert_System"
+        "id": 15,
+        "image": "https://i.imgur.com/ldhwE2X.png",
+        "title": "Restaurant Booking Service",
+        "description": "Effortlessly reserve your table at the finest restaurants with our seamless and user-friendly booking service.",
+        "tags": [
+            "ReactJS",
+            "Tailwind"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Restaurant-Booking-Service",
+        "demoLink": "https://restaurant-booking-service.vercel.app/"
     },
     {
-      "name": "AI Mental Health Tracker",
-      "Python": "Python",
-      "ML": "ML",
-      "img": "https://i.imgur.com/Yw6eGFp.png",
-      "review": "A predictive model for monitoring and tracking mental health using artificial intelligence and machine learning models.",
-      "link": "https://github.com/007-Shivam/AI_Mental_Health_Tracker"
+        "id": 16,
+        "image": "https://i.imgur.com/r2ljzsY.jpg",
+        "title": "Little Lemon",
+        "description": "Little Lemon is a delightful restaurant menu browsing app developed using Kotlin Jetpack Compose.",
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Little_Lemon",
+        "demoLink": ""
     },
     {
-      "name": "Simple Jarvis Assistant",
-      "Python": "Python",
-      "img": "https://i.imgur.com/UeWP512.jpg",
-      "review": "Python virtual assistant: handles time/date updates, Wikipedia searches, website openings, and more.",
-      "link": "https://github.com/007-Shivam/Basic_Jarvis_Assistant"
+        "id": 17,
+        "image": "https://i.imgur.com/slftMhe.jpg",
+        "title": "Simple Quiz App",
+        "description": "A Dart-based quiz app for interactive knowledge tests, providing instant feedback to users on their answers.",
+        "tags": [
+            "Dart"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/simplequizapp",
+        "demoLink": ""
     },
     {
-      "name": "Iron Man Management System",
-      "Java": "Java",
-      "img": "https://i.imgur.com/toj8mJp.gif",
-      "review": "Java project for managing daily activities of hard-working \"IRON MEN.\"",
-      "link": "https://github.com/007-Shivam/IRON-MAN-Management-System"
+        "id": 18,
+        "image": "https://i.imgur.com/DzfNngv.jpg",
+        "title": "Feedfolks",
+        "description": "Mobile app designed to aid in feeding the hungry, streamlining assistance to those in need.",
+        "tags": [
+            "Figma"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/FeedFolks",
+        "demoLink": ""
     },
     {
-      "name": "Cosmos App",
-      "Kotlin": "Kotlin",
-      "Jetpack": "Jetpack Compose",
-      "img": "https://i.imgur.com/ugmwhiv.jpg",
-      "review": "It is a community app which let us to join various communities like GDSC, GFG, Code chef.",
-      "link": "https://github.com/007-Shivam/COSMOS-App"
+        "id": 19,
+        "image": "https://i.imgur.com/J7Nfxeu.png",
+        "title": "Meal Planner Expert System",
+        "description": "A Python Program with a knowledge base to suggest a nutritional intake according to BMR calculated.",
+        "tags": [
+            "Python",
+            "AI"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Meal_Planner_Expert_System",
+        "demoLink": ""
     },
     {
-      "name": "Multi-threading based ATM Banking System",
-      "Python": "Python",
-      "img": "https://i.imgur.com/56McTrH.jpg",
-      "review": "ATM project boosts banking efficiency through advanced multithreading techniques.",
-      "link": "https://github.com/007-Shivam/Multhreading_based_ATM_Banking_System"
+        "id": 20,
+        "image": "https://i.imgur.com/Yw6eGFp.png",
+        "title": "AI Mental Health Tracker",
+        "description": "A predictive model for monitoring and tracking mental health using artificial intelligence and machine learning models.",
+        "tags": [
+            "Python",
+            "ML"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/AI_Mental_Health_Tracker",
+        "demoLink": ""
+    },
+    {
+        "id": 21,
+        "image": "https://i.imgur.com/UeWP512.jpg",
+        "title": "Simple Jarvis Assistant",
+        "description": "Python virtual assistant: handles time/date updates, Wikipedia searches, website openings, and more.",
+        "tags": [
+            "Python"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Basic_Jarvis_Assistant",
+        "demoLink": ""
+    },
+    {
+        "id": 22,
+        "image": "https://i.imgur.com/toj8mJp.gif",
+        "title": "Iron Man Management System",
+        "description": "Java project for managing daily activities of hard-working \"IRON MEN.\"",
+        "tags": [
+            "Java"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/IRON-MAN-Management-System",
+        "demoLink": ""
+    },
+    {
+        "id": 23,
+        "image": "https://i.imgur.com/ugmwhiv.jpg",
+        "title": "Cosmos App",
+        "description": "It is a community app which let us to join various communities like GDSC, GFG, Code chef.",
+        "tags": [
+            "Kotlin",
+            "Jetpack Compose"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/COSMOS-App",
+        "demoLink": ""
+    },
+    {
+        "id": 24,
+        "image": "https://i.imgur.com/56McTrH.jpg",
+        "title": "Multi-threading based ATM Banking System",
+        "description": "ATM project boosts banking efficiency through advanced multithreading techniques.",
+        "tags": [
+            "Python"
+        ],
+        "learnMoreLink": "https://github.com/007-Shivam/Multhreading_based_ATM_Banking_System",
+        "demoLink": ""
     }
-  ]
-  
+]

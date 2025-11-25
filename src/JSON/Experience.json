@@ -1,94 +1,99 @@
 [
-  {
-    "title": "Lance IP",
-    "role": "Web Administrator",
-    "type": "Retainer",
-    "duration": "Jul 2024 - Present",
-    "responsibilities": [
-      "Manage and maintain the company website, ensuring regular updates and smooth operation.",
-      "Optimize website content for search engines."
-    ],
-    "image": "https://i.imgur.com/0B7Gy7I.png"
-  },
-  {
-    "title": "Lance IP",
-    "role": "Web Developer",
-    "type": "Freelancer",
-    "duration": "Jun 2024 - Jul 2024",
-    "responsibilities": [
-      "Creted a sub-domain & implementing e-commerce functionality using plugins like WooCommerce on Wordpress.",
-      "Integrating third-party services and APIs for enhanced functionality.",
-      "Implementing new technologies strategically.",
-      "Implementing responsive design principles to ensure the website works well on different devices."
-    ],
-    "image": "https://i.imgur.com/0B7Gy7I.png"
-  },
-  {
-    "title": "Career Corps",
-    "role": "Android Developer Intern",
-    "type": "Internship",
-    "duration": "Apr 2024 - Jul 2024",
-    "responsibilities": [
-      "Assist in Android app development.",
-      "Contribute to codebase enhancement.",
-      "Debug and troubleshoot issues in the app.",
-      "Assist in UI/UX design and implementation.",
-      "Participate in team meetings and discussions."
-    ],
-    "image": "https://i.imgur.com/WeSzR2U.png"
-  },
-  {
-    "title": "VibeByte Media",
-    "role": "Software Developer Intern",
-    "type": "Internship",
-    "duration": "Jan 2024 - Feb 2024",
-    "responsibilities": [
-      "Applying Python proficiency to craft advanced web scraping software.",
-      "Utilizing frameworks such as BeautifulSoup and Selenium for optimal data extraction.",
-      "Implementing new technologies strategically.",
-      "Collaborated with a team of 5 members to implement innovative features."
-    ],
-    "image": "https://i.imgur.com/ifog1za.jpg"
-  },
-  {
-    "title": "Association for Computing Machinery BVPDET-NM",
-    "role": "Web Master",
-    "type": "Full Time",
-    "duration": "Sept 2023 - Aug 2024",
-    "responsibilities": [
-      "Website management and content updates.",
-      "User experience and design enhancements.",
-      "Collaboration with ACM teams.",
-      "Implementing new web technologies strategically.",
-      "Collaborated with a team of 5 members to implement innovative features on the website."
-    ],
-    "image": "https://i.imgur.com/FlyTy3U.jpg"
-  },
-  {
-    "title": "Edunet Foundation",
-    "role": "Artificial Intelligence Intern",
-    "type": "Internship",
-    "duration": "Jun 2023 - Jul 2023",
-    "responsibilities": [
-      "Completed assigned tasks and milestone.",
-      "Delivering a project presentation.",
-      "Solving real-world challenges in AI.",
-      "Valuable experience enhancing skills in AI and professional growth.",
-      "Earned certifications from IBM and Edunet Foundation."
-    ],
-    "image": "https://i.imgur.com/SVYW3VV.png"
-  },
-  {
-    "title": "AIESEC",
-    "role": "Facilitator",
-    "type": "One day Volunteer",
-    "duration": "April 2023",
-    "responsibilities": [
-      "Empowering youth through education initiatives.",
-      "Facilitating transformative learning experiences.",
-      "Empowering young minds for global impact.",
-      "Educating and inspiring for positive change."
-    ],
-    "image": "https://i.imgur.com/0bLQLGF.png"
-  }
+    {
+        "title": "Lance IP",
+        "role": "Web Administrator",
+        "type": "Retainer",
+        "duration": "Jul 2024 - Oct ",
+        "responsibilities": [
+            "Manage and maintain the company’s primary website, ensuring smooth performance, high uptime, and timely content updates.",
+            "Monitor website performance, troubleshoot technical issues proactively, and implement improvements to enhance speed and user experience.",
+            "Optimize on-page SEO through improved metadata, structured content, and well-organized site architecture to boost search engine visibility.",
+            "Collaborate with internal teams to align website updates with marketing goals and brand standards.",
+            "Ensure website security by performing regular plugin updates, backups, and vulnerability checks."
+        ],
+        "image": "https://i.imgur.com/0B7Gy7I.png"
+    },
+    {
+        "title": "Lance IP",
+        "role": "Web Developer",
+        "type": "Freelancer",
+        "duration": "Jun 2024 - Jul 2024",
+        "responsibilities": [
+            "Set up and configured a new sub-domain with full e-commerce capabilities using WooCommerce, including secure payment workflows.",
+            "Integrated third-party plugins and APIs to extend the website’s functionality and improve user experience.",
+            "Implemented responsive design principles to ensure seamless performance across desktops, tablets, and mobile devices.",
+            "Enhanced website structure, navigation, and metadata to support organic SEO growth and search visibility.",
+            "Advised on and implemented new technologies to improve website functionality and internal team efficiency."
+        ],
+        "image": "https://i.imgur.com/0B7Gy7I.png"
+    },
+    {
+        "title": "Career Corps",
+        "role": "Android Developer Intern",
+        "type": "Internship",
+        "duration": "Apr 2024 - Jul 2024",
+        "responsibilities": [
+            "Contributed to building a peer-to-peer (P2P) file-sharing application as part of a team of 3 using Kotlin and React Native.",
+            "Assisted in developing UI/UX components that enhanced user navigation, accessibility, and visual appeal.",
+            "Debugged and troubleshot application issues to improve stability and performance.",
+            "Adapted quickly to changing client requirements and delivered updates under tight deadlines.",
+            "Participated in team discussions, feature planning, and code reviews to ensure quality and consistency."
+        ],
+        "image": "https://i.imgur.com/WeSzR2U.png"
+    },
+    {
+        "title": "VibeByte Media",
+        "role": "Software Developer Intern",
+        "type": "Internship",
+        "duration": "Jan 2024 - Feb 2024",
+        "responsibilities": [
+            "Developed advanced Python-based web scraping tools to automate data collection for multiple clients.",
+            "Collaborated with a team of 5 to build scalable scraping pipelines using BeautifulSoup, Selenium, and custom logic.",
+            "Created high-accuracy scrapers for platforms such as LinkedIn, Google Maps, and other data-heavy websites.",
+            "Implemented new scraping techniques to improve accuracy, efficiency, and error handling in data extraction.",
+            "Contributed to brainstorming sessions and feature planning to deliver innovative automation solutions."
+        ],
+        "image": "https://i.imgur.com/ifog1za.jpg"
+    },
+    {
+        "title": "Association for Computing Machinery BVPDET-NM",
+        "role": "Web Master",
+        "type": "Full Time",
+        "duration": "Sept 2023 - Aug 2024",
+        "responsibilities": [
+            "Managed and updated the official ACM chapter website to ensure accurate content and user-friendly navigation.",
+            "Improved the site’s UI/UX by enhancing design, layout consistency, and accessibility for visitors and members.",
+            "Collaborated with various ACM teams to align website content with events, workshops, and chapter initiatives.",
+            "Strategically integrated new web technologies to modernize the platform and improve performance.",
+            "Worked with a team of 5 to implement innovative features that enhanced community engagement and functionality."
+        ],
+        "image": "https://i.imgur.com/FlyTy3U.jpg"
+    },
+    {
+        "title": "Edunet Foundation",
+        "role": "Artificial Intelligence Intern",
+        "type": "Internship",
+        "duration": "Jun 2023 - Jul 2023",
+        "responsibilities": [
+            "Completed assigned AI tasks and project milestones focused on solving real-world challenges using machine learning techniques.",
+            "Delivered a structured project presentation demonstrating technical understanding and problem-solving skills.",
+            "Gained hands-on experience in AI workflows, contributing to personal and professional growth.",
+            "Collaborated with peers and mentors to refine project goals and outputs.",
+            "Earned certifications from IBM and Edunet Foundation for successful project completion."
+        ],
+        "image": "https://i.imgur.com/SVYW3VV.png"
+    },
+    {
+        "title": "Association Internationale des Étudiants en Sciences Économiques et Commerciales",
+        "role": "Facilitator",
+        "type": "One day Volunteer",
+        "duration": "April 2023",
+        "responsibilities": [
+            "Facilitated youth-focused educational sessions aimed at building leadership and personal development.",
+            "Empowered students through engaging activities and discussions designed to create transformative learning experiences.",
+            "Inspired young participants to contribute to positive social change and global impact.",
+            "Assisted in organizing and managing the event to ensure smooth execution of activities."
+        ],
+        "image": "https://i.imgur.com/0bLQLGF.png"
+    }
 ]

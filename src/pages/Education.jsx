@@ -1,5 +1,5 @@
 import React from "react";
-import educationHistory from "../json/Education.json";
+import educationHistory from "../JSON/Education.json";
 
 export default function Education() {
     return (

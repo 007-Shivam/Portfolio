@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import experienceData from "../json/Experience.json";
+import experienceData from "../JSON/Experience.json";
 
 export default function Experience() {
     const [selected, setSelected] = useState(null);

@@ -1,5 +1,5 @@
 import React from "react";
-import publications from "../json/Publications.json";
+import publications from "../JSON/Publications.json";
 
 export default function Publications() {
     return (

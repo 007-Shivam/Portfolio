@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect, useMemo } from 'react';
 import { ChevronLeft, ChevronRight, ArrowRight, ExternalLink } from 'lucide-react';
-import projectsData from '../json/Projects.json';
+import projectsData from '../JSON/Projects.json';
 
 const Projects = () => {
   const carouselRef = useRef(null);

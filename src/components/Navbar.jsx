@@ -70,6 +70,14 @@ const Navbar = () => {
 
                 <div className="flex items-center space-x-8">
                     <button
+                        onClick={() => scrollToSection('experience')}
+                        className="flex items-center space-x-1 hover:text-gray-300 transition"
+                    >
+                        <span>Experience</span>
+                    </button>
+
+
+                    <button
                         onClick={() => scrollToSection('projects')}
                         className="flex items-center space-x-1 hover:text-gray-300 transition"
                     >
@@ -90,12 +98,7 @@ const Navbar = () => {
                         <span>Education</span>
                     </button>
 
-                    <button
-                        onClick={() => scrollToSection('experience')}
-                        className="flex items-center space-x-1 hover:text-gray-300 transition"
-                    >
-                        <span>Experience</span>
-                    </button>
+
 
                     <button
                         onClick={() => scrollToSection('skills')}
@@ -145,6 +148,18 @@ const Navbar = () => {
                 {isOpen && (
                     <div className="px-6 pb-6 space-y-1">
                         <div className="border-t border-gray-800 pt-4">
+
+                            <button
+                                onClick={() => {
+                                    scrollToSection('experience');
+                                }}
+                                className="w-full flex items-center justify-between py-4 text-xl font-serif hover:text-gray-300 transition"
+                            >
+                                <span>Experience</span>
+
+                            </button>
+
+
                             <button
                                 onClick={() => scrollToSection('projects')}
                                 className="block w-full text-left py-4 text-xl font-serif hover:text-gray-300 transition"
@@ -169,15 +184,7 @@ const Navbar = () => {
 
                             </button>
 
-                            <button
-                                onClick={() => {
-                                    scrollToSection('experience');
-                                }}
-                                className="w-full flex items-center justify-between py-4 text-xl font-serif hover:text-gray-300 transition"
-                            >
-                                <span>Experience</span>
 
-                            </button>
 
                             <button
                                 onClick={() => {

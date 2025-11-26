@@ -1,4 +1,5 @@
 import React from 'react';
+import { Analytics } from "@vercel/analytics/react";
 import { AnimatedBackground } from "animated-backgrounds";
 import Navbar from "./components/Navbar.jsx";
 import HeroSection from "./pages/HeroSection.jsx";
@@ -11,12 +12,11 @@ import Experience from './pages/Experience.jsx';
 import Education from './pages/Education.jsx';
 import Publications from './pages/Publication.jsx';
 import ScrollToTop from './components/ScrollToTop.jsx';
-
+import Contribution from './pages/Contribution.jsx';
 
 function App() {
   return (
     <div className="relative min-h-screen">
-      {/* Animated background - fixed position */}
       <AnimatedBackground
         preset="portfolio"
         animationName="neuralNetwork"
@@ -36,21 +36,23 @@ function App() {
         }}
       />
 
-      {/* Overlay for visibility */}
       <div className="fixed inset-0 bg-black/30 z-[1] pointer-events-none" />
 
-      {/* Content - Add relative positioning to create stacking context */}
       <div className="relative z-[2]">
         <Navbar />
         <ScrollToTop />
         <HeroSection />
+                <Experience />
+
         <Projects />
+        <Contribution />
         <Skills />
         <Education />
-        <Experience />
         <Publications />
         <Contact />
         <Footer />
+        
+        <Analytics />
       </div>
     </div>
   );

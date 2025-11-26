@@ -5,15 +5,18 @@
         "scoreType": "CGPA",
         "scoreValue": "4",
         "image": "https://imgur.com/32V9ueN.png",
-        "location": "Los Angeles, CA"
+        "location": "Los Angeles, CA",
+        "course": "MS in Computer Science (AI)"
     },
     {
-        "institution": "Bharati Vidyapeeth Deemed University Dept of Eng & Tech",
+        "institution": "Bharati Vidyapeeth Deemed University Dept. of Eng. & Tech.",
         "duration": "2021 - 2025",
         "scoreType": "CGPA",
         "scoreValue": "9.85",
         "image": "https://imgur.com/xrcsvrt.png",
-        "location": "Navi Mumbai, India"
+        "location": "Navi Mumbai, India",
+                "course": "B.Tech in Computer Science (AI/ML)"
+
     },
     {
         "institution": "Nirmala Memorial Foundation College of Commerce & Science",
@@ -21,7 +24,9 @@
         "scoreType": "Percentage",
         "scoreValue": "94.33%",
         "image": "https://imgur.com/ZRFThNY.png",
-        "location": "Mumbai, India"
+        "location": "Mumbai, India",
+                "course": "Science"
+
     },
     {
         "institution": "Oxford Public School",

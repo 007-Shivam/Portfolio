@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X, Terminal } from 'lucide-react';
-
+import LogoImage from '../assets/lg.png';
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [openDropdown, setOpenDropdown] = useState(null);
@@ -64,7 +64,7 @@ const Navbar = () => {
                         onClick={() => scrollToSection('home')}
                         className="flex items-center cursor-pointer"
                     >
-                        <Terminal size={28} className="text-white hover:text-gray-300 transition" />
+                        <img src={LogoImage} alt="Logo" className="h-8 w-10" />
                     </button>
                 </div>
 
@@ -134,7 +134,7 @@ const Navbar = () => {
                         onClick={() => scrollToSection('home')}
                         className="flex items-center"
                     >
-                        <Terminal size={26} className="text-white hover:text-gray-300 transition" />
+                        <img src={LogoImage} alt="Logo" className="h-8 w-10" />
                     </button>
                     <button
                         onClick={toggleMenu}

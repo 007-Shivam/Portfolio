@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram, Linkedin, Github, Mail } from 'lucide-react';
-import { SiLeetcode } from 'react-icons/si'; // import LeetCode icon
+import { SiLeetcode } from 'react-icons/si'; 
 
 
 export default function Footer() {

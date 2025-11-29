@@ -7,7 +7,6 @@ export default function Contact() {
     const [errors, setErrors] = useState({});
     const [loading, setLoading] = useState(false);
 
-    // Validation function
     const validateForm = (data) => {
         let newErrors = {};
 
@@ -36,15 +35,13 @@ export default function Contact() {
             message: formRef.current.message.value,
         };
 
-        // Run Validation
         const validationErrors = validateForm(formData);
 
         if (Object.keys(validationErrors).length > 0) {
             setErrors(validationErrors);
-            return; // Stop sending email
+            return;
         }
 
-        // No errors → Proceed
         setErrors({});
         setLoading(true);
 

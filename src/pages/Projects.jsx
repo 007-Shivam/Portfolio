@@ -7,7 +7,7 @@ const Projects = () => {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const originalCards = projectsData; // ✅ Use the imported JSON
+  const originalCards = projectsData;
 
   const displayCards = useMemo(() => {
     const cardsToClone = originalCards.slice(0, 3);

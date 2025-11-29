@@ -3,7 +3,6 @@ import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaJs, FaPhp, FaApple, FaGitAlt, F
 import { SiC, SiKotlin, SiMysql, SiR, SiTensorflow, SiPostman, SiGooglecloud, SiPandas, SiNumpy, SiPostgresql, SiHuggingface, SiFastapi, SiJetpackcompose, SiScikitlearn, SiSelenium, SiReact, SiFlutter, SiFigma, SiMongodb } from 'react-icons/si';
 import { VscVscode } from "react-icons/vsc";
 
-// Reduced icon size to 24
 const iconSize = 24;
 
 const skillCategories = [
@@ -76,7 +75,6 @@ export default function Skills() {
                         <h3 className="text-xl font-semibold text-gray-200 mb-3 border-l-4 border-yellow-400 pl-3">
                             {category.title}
                         </h3>
-                        {/* Tighter grid gap and increased columns on large screens */}
                         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8 gap-3">
                             {category.items.map((skill, idx) => (
                                 <div key={idx} className="flex flex-col items-center bg-white dark:bg-gray-800 rounded-lg p-2 shadow hover:scale-105 transition-transform duration-200">

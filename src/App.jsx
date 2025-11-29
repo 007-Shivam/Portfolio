@@ -42,8 +42,7 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <HeroSection />
-                <Experience />
-
+        <Experience />
         <Projects />
         <Contribution />
         <Skills />
@@ -51,7 +50,6 @@ function App() {
         <Publications />
         <Contact />
         <Footer />
-        
         <Analytics />
       </div>
     </div>

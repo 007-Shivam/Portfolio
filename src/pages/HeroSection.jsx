@@ -1,7 +1,7 @@
-import { React } from 'react';
+import React from 'react';
 import { Instagram, Linkedin, Github, Mail } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
-import { SiLeetcode } from 'react-icons/si'; // import LeetCode icon
+import { SiLeetcode } from 'react-icons/si';
 
 export default function HeroSection() {
     const socialIcons = [
@@ -9,13 +9,13 @@ export default function HeroSection() {
         { icon: <Linkedin size={24} />, key: 'linkedin', link: 'https://linkedin.com/in/shivambhosle007' },
         { icon: <Github size={24} />, key: 'github', link: 'https://github.com/007-Shivam' },
         { icon: <Mail size={24} />, key: 'email', link: 'mailto:sbhosle@usc.com' },
-        { icon: <SiLeetcode size={24} />, key: 'leetcode', link: 'https://leetcode.com/u/Shivam__007/' }, // added LeetCode
+        { icon: <SiLeetcode size={24} />, key: 'leetcode', link: 'https://leetcode.com/u/Shivam__007/' },
     ];
 
     return (
         <section className="min-h-screen font-['Inter',_sans-serif] text-white flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20 sm:py-28 md:py-36 text-center">
             <div className="max-w-5xl mx-auto flex flex-col items-center justify-center space-y-8 sm:space-y-10">
-                
+
                 {/* Name Section */}
                 <div className="relative inline-block text-left">
                     <span className="absolute -top-6 left-3 text-xl sm:text-2xl text-gray-400">I’m</span>
@@ -25,7 +25,7 @@ export default function HeroSection() {
                     <div className="w-24 sm:w-28 h-1.5 bg-yellow-400 mt-6 mx-auto rounded-full"></div>
                 </div>
 
-                {/* Description */}
+                {/* Typewriter Titles */}
                 <p className="text-base sm:text-lg md:text-xl text-gray-400 leading-relaxed max-w-2xl px-2">
                     I am a passionate{' '}
                     <span className="text-yellow-400 font-semibold">
@@ -57,12 +57,26 @@ export default function HeroSection() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`Visit my ${item.key} profile`}
-                            className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-gray-700/50 hover:bg-yellow-400/20 text-yellow-400 rounded-full transition-all duration-300"
+                            className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-gray-700/50 hover:bg-yellow-400/20 text-yellow-400 rounded-full transition-all duration-300 transform hover:scale-110"
                         >
                             {item.icon}
                         </a>
                     ))}
                 </div>
+
+                {/* NEW: Personal Description / About Section */}
+                <div className="mt-12 max-w-3xl mx-auto px-4 sm:px-0">
+                    <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed md:leading-loose text-center font-light">
+                        Currently pursuing my 
+                        <span className="text-white font-medium"> MS in Computer Science (AI)</span> at the 
+                        <span className="text-yellow-400 font-medium"> University of Southern California</span>. 
+                        With a strong background in Machine Learning, Computer Vision, and Full Stack Development, 
+                        I bridge the gap between intelligent algorithms and scalable software solutions. 
+                        Whether building high-accuracy models or deploying secure web applications, 
+                        I am dedicated to creating impactful technology.
+                    </p>
+                </div>
+
             </div>
         </section>
     );

@@ -1,42 +1,89 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronDown, Menu, X, Terminal } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Menu, X } from 'lucide-react';
 import LogoImage from '../assets/lg.png';
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [openDropdown, setOpenDropdown] = useState(null);
     const [scrolled, setScrolled] = useState(false);
+    const [activeSection, setActiveSection] = useState('home');
+    
+    const [indicatorStyle, setIndicatorStyle] = useState({ left: 0, width: 0, opacity: 0 });
+    
+    const navRefs = useRef({});
 
     const toggleMenu = () => setIsOpen(!isOpen);
-    const toggleDropdown = (menu) => {
-        setOpenDropdown(openDropdown === menu ? null : menu);
-    };
 
-    // Scroll effect to make navbar full width
+    const navLinks = [
+        { id: 'experience', label: 'Experience' },
+        { id: 'projects', label: 'Projects' },
+        { id: 'publications', label: 'Publications' },
+        { id: 'education', label: 'Education' },
+        { id: 'skills', label: 'Skills' },
+        { id: 'contact', label: 'Contact' },
+    ];
+
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
+
+            if (window.scrollY < 100) {
+                setActiveSection('home');
+            }
         };
+
+        const observerOptions = {
+            root: null,
+            rootMargin: '-40% 0px -60% 0px', 
+            threshold: 0
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting && window.scrollY >= 100) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        }, observerOptions);
+
+        navLinks.forEach(link => {
+            const section = document.getElementById(link.id);
+            if (section) observer.observe(section);
+        });
+
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            observer.disconnect();
+        };
     }, []);
 
-    // Inside Navbar.jsx
+    useEffect(() => {
+        const activeTab = navRefs.current[activeSection];
+        
+        if (activeTab) {
+            setIndicatorStyle({
+                left: activeTab.offsetLeft,
+                width: activeTab.offsetWidth,
+                opacity: 1
+            });
+        } else {
+            setIndicatorStyle(prev => ({ ...prev, opacity: 0 }));
+        }
+    }, [activeSection]);
 
     const scrollToSection = (sectionId) => {
-        // 1. Close the menu immediately
         setIsOpen(false);
+        setActiveSection(sectionId); 
 
-        // 2. Use a timeout to allow the menu to close and layout to shift UP before calculating
         setTimeout(() => {
             if (sectionId === 'home') {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             } else {
                 const element = document.getElementById(sectionId);
                 if (element) {
-                    // Adjust offset based on screen width (Mobile usually needs less offset than desktop)
                     const isMobile = window.innerWidth < 768;
-                    const navbarOffset = isMobile ? 80 : 100; // 80px for mobile, 100px for desktop
-
+                    const navbarOffset = isMobile ? 80 : 100;
                     const elementPosition = element.getBoundingClientRect().top;
                     const offsetPosition = elementPosition + window.scrollY - navbarOffset;
 
@@ -46,7 +93,7 @@ const Navbar = () => {
                     });
                 }
             }
-        }, 300); // 300ms delay to match the closing animation/layout shift
+        }, 300);
     };
 
     return (
@@ -58,7 +105,7 @@ const Navbar = () => {
         >
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center justify-between px-8 py-4">
+            <div className="hidden md:flex items-center justify-between px-8 py-4 relative">
                 <div className="flex items-center space-x-2">
                     <button
                         onClick={() => scrollToSection('home')}
@@ -68,57 +115,37 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                <div className="flex items-center space-x-8">
-                    <button
-                        onClick={() => scrollToSection('experience')}
-                        className="flex items-center space-x-1 hover:text-gray-300 transition"
-                    >
-                        <span>Experience</span>
-                    </button>
+                <div className="flex items-center relative">
+                    
+                    <div 
+                        className="absolute bg-gray-700/80 rounded-full transition-all duration-300 ease-out h-9 -z-10"
+                        style={{
+                            left: `${indicatorStyle.left}px`,
+                            width: `${indicatorStyle.width}px`,
+                            opacity: indicatorStyle.opacity,
+                        }}
+                    />
 
-
-                    <button
-                        onClick={() => scrollToSection('projects')}
-                        className="flex items-center space-x-1 hover:text-gray-300 transition"
-                    >
-                        <span>Projects</span>
-                    </button>
-
-                    <button
-                        onClick={() => scrollToSection('publications')}
-                        className="flex items-center space-x-1 hover:text-gray-300 transition"
-                    >
-                        <span>Publications</span>
-                    </button>
-
-                    <button
-                        onClick={() => scrollToSection('education')}
-                        className="flex items-center space-x-1 hover:text-gray-300 transition"
-                    >
-                        <span>Education</span>
-                    </button>
-
-
-
-                    <button
-                        onClick={() => scrollToSection('skills')}
-                        className="flex items-center space-x-1 hover:text-gray-300 transition"
-                    >
-                        Skills
-                    </button>
-
-                    <button
-                        onClick={() => scrollToSection('contact')}
-                        className="flex items-center space-x-1 hover:text-gray-300 transition"
-                    >
-                        Contact
-                    </button>
+                    <div className="flex items-center space-x-2"> 
+                        {navLinks.map((link) => (
+                            <button
+                                key={link.id}
+                                ref={el => navRefs.current[link.id] = el}
+                                onClick={() => scrollToSection(link.id)}
+                                className={`px-4 py-1.5 rounded-full transition-colors duration-300 z-10 ${
+                                    activeSection === link.id ? 'text-white' : 'text-gray-400 hover:text-white'
+                                }`}
+                            >
+                                {link.label}
+                            </button>
+                        ))}
+                    </div>
                 </div>
 
                 <a
-                    href="https://drive.google.com/file/d/1cjUFet02qS2myK64I6MvOtS86W6pxu6K/view?usp=sharing" // Replace with your actual URL
-                    target="_blank" // Opens in a new tab
-                    rel="noopener noreferrer" // Security best practice
+                    href="https://drive.google.com/file/d/1cjUFet02qS2myK64I6MvOtS86W6pxu6K/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gray-800 hover:bg-gray-700 px-6 py-2 rounded-full transition"
                 >
                     Resume
@@ -126,92 +153,39 @@ const Navbar = () => {
 
             </div>
 
-            {/* Mobile Navigation */}
+            {/* Mobile Navigation (Unchanged mostly, just using map) */}
             <div className="md:hidden">
-                {/* Mobile Header */}
                 <div className="flex items-center justify-between px-6 py-4">
-                    <button
-                        onClick={() => scrollToSection('home')}
-                        className="flex items-center"
-                    >
+                    <button onClick={() => scrollToSection('home')} className="flex items-center">
                         <img src={LogoImage} alt="Logo" className="h-8 w-10" />
                     </button>
-                    <button
-                        onClick={toggleMenu}
-                        className="p-2 hover:bg-gray-900 rounded transition"
-                    >
+                    <button onClick={toggleMenu} className="p-2 hover:bg-gray-900 rounded transition">
                         {isOpen ? <X size={24} /> : <Menu size={24} />}
                     </button>
                 </div>
 
-                {/* Mobile Menu */}
                 {isOpen && (
                     <div className="px-6 pb-6 space-y-1">
                         <div className="border-t border-gray-800 pt-4">
-
-                            <button
-                                onClick={() => {
-                                    scrollToSection('experience');
-                                }}
-                                className="w-full flex items-center justify-between py-4 text-xl font-serif hover:text-gray-300 transition"
+                            {navLinks.map(link => (
+                                <button
+                                    key={link.id}
+                                    onClick={() => scrollToSection(link.id)}
+                                    className="w-full flex items-center justify-between py-4 text-xl font-serif hover:text-gray-300 transition"
+                                >
+                                    <span>{link.label}</span>
+                                </button>
+                            ))}
+                            
+                            <a
+                                href="https://drive.google.com/file/d/1cjUFet02qS2myK64I6MvOtS86W6pxu6K/view?usp=sharing"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="w-full block text-center bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-full transition mt-6"
                             >
-                                <span>Experience</span>
-
-                            </button>
-
-
-                            <button
-                                onClick={() => scrollToSection('projects')}
-                                className="block w-full text-left py-4 text-xl font-serif hover:text-gray-300 transition"
-                            >
-                                Projects
-                            </button>
-
-                            <button
-                                onClick={() => scrollToSection('publications')}
-                                className="block w-full text-left py-4 text-xl font-serif hover:text-gray-300 transition"
-                            >
-                                Publications
-                            </button>
-
-                            <button
-                                onClick={() => {
-                                    scrollToSection('education');
-                                }}
-                                className="w-full flex items-center justify-between py-4 text-xl font-serif hover:text-gray-300 transition"
-                            >
-                                <span>Education</span>
-
-                            </button>
-
-
-
-                            <button
-                                onClick={() => {
-                                    scrollToSection('skills');
-                                }}
-                                className="w-full flex items-center justify-between py-4 text-xl font-serif hover:text-gray-300 transition"
-                            >
-                                <span>Skills</span>
-                            </button>
-
-                            <button
-                                onClick={() => scrollToSection('contact')}
-                                className="block w-full text-left py-4 text-xl font-serif hover:text-gray-300 transition border-b border-gray-800"
-                            >
-                                Contact
-                            </button>
+                                Resume
+                            </a>
                         </div>
-
-                        <a
-                            href="https://drive.google.com/file/d/1cjUFet02qS2myK64I6MvOtS86W6pxu6K/view?usp=sharing"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full block text-center bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-full transition mt-6"
-                        >
-                            Resume
-                        </a>
-
                     </div>
                 )}
             </div>

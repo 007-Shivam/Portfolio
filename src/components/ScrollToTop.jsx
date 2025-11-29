@@ -21,7 +21,6 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
-  // Styles
   const buttonStyle = {
     position: "fixed",
     bottom: "2rem",

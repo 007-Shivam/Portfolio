@@ -5,7 +5,6 @@ export default function Publications() {
     return (
         <section id="publications" className="py-16 px-6 text-white">
             <div className="max-w-7xl mx-auto">
-                {/* Header */}
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
                         Selected Publications
@@ -13,7 +12,6 @@ export default function Publications() {
                     <div className="w-24 h-1.5 bg-yellow-400 mx-auto rounded-full"></div>
                 </div>
 
-                {/* Flex Container for Centered Cards */}
                 <div className="flex flex-wrap justify-center gap-6">
                     {publications.map((pub, index) => (
                         <a
@@ -21,7 +19,6 @@ export default function Publications() {
                             href={pub.url}
                             target="_blank"
                             rel="noopener noreferrer"
-                            // w-full on mobile, specific percentages on larger screens to mimic grid
                             className="
                                 group relative block 
                                 w-full sm:w-[48%] lg:w-[30%] max-w-md 
